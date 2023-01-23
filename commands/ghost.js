@@ -70,7 +70,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('deogen')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Deogen.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -87,7 +87,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('goryo')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Goryo.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -104,7 +104,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('hantu')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Hantu.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -121,7 +121,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('jinn')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Jinn.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -138,7 +138,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('mare')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Mare.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -155,7 +155,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('mimic')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Mimic.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -172,7 +172,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('moroi')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Moroi.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -189,7 +189,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('myl')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Myling.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -206,7 +206,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('obake')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Obake.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -223,7 +223,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('oni')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Oni.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -240,7 +240,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('onryo')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Onryo.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -257,7 +257,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('phantom')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Phantom.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -274,7 +274,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('poltergeist')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Poltergeist.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -291,7 +291,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('raiju')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Raiju.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -308,7 +308,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('revenant')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Revenant.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -325,7 +325,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('shade')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Shade.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -342,7 +342,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('spirit')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Spirit.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -359,7 +359,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('thaye')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Thaye.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -376,7 +376,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('twins')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Twins.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -393,7 +393,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('wraith')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Wraith.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -410,7 +410,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('yokai')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Yokai.')
                 .addStringOption(option =>
                     option
                         .setName('display')
@@ -427,7 +427,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('yurei')
-                .setDescription('Shows information about the Demon.')
+                .setDescription('Shows information about the Yurei.')
                 .addStringOption(option =>
                     option
                         .setName('display')
