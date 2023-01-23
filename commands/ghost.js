@@ -524,17 +524,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'demEvi':
                             title = '**Evidence:**';
                             displayValue = demEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'demTra':
                             title = '**Traits:**';
                             displayValue = demTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'demAbi':
                             title = '**Hidden abilities:**';
                             displayValue = demAbi;
                             descriptionValue = 'abilities';
@@ -574,17 +574,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'deoEvi':
                             title = '**Evidence:**';
                             displayValue = deoEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'deoTra':
                             title = '**Traits:**';
                             displayValue = deoTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'deoAbi':
                             title = '**Hidden abilities:**';
                             displayValue = deoAbi;
                             descriptionValue = 'abilities';
@@ -624,17 +624,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'gorEvi':
                             title = '**Evidence:**';
                             displayValue = gorEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'gorTra':
                             title = '**Traits:**';
                             displayValue = gorTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'gorAbi':
                             title = '**Hidden abilities:**';
                             displayValue = gorAbi;
                             descriptionValue = 'abilities';
@@ -674,17 +674,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'hanEvi':
                             title = '**Evidence:**';
                             displayValue = hanEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'hanTra':
                             title = '**Traits:**';
                             displayValue = hanTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'hanAbi':
                             title = '**Hidden abilities:**';
                             displayValue = hanAbi;
                             descriptionValue = 'abilities';
@@ -724,17 +724,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'jinEvi':
                             title = '**Evidence:**';
                             displayValue = jinEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'jinTra':
                             title = '**Traits:**';
                             displayValue = jinTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'jinAbi':
                             title = '**Hidden abilities:**';
                             displayValue = jinAbi;
                             descriptionValue = 'abilities';
@@ -774,17 +774,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'marEvi':
                             title = '**Evidence:**';
                             displayValue = marEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'marTra':
                             title = '**Traits:**';
                             displayValue = marTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'marAbi':
                             title = '**Hidden abilities:**';
                             displayValue = marAbi;
                             descriptionValue = 'abilities';
@@ -824,17 +824,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'mimEvi':
                             title = '**Evidence:**';
                             displayValue = mimEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'mimTra':
                             title = '**Traits:**';
                             displayValue = mimTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'mimAbi':
                             title = '**Hidden abilities:**';
                             displayValue = mimAbi;
                             descriptionValue = 'abilities';
@@ -874,17 +874,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'morEvi':
                             title = '**Evidence:**';
                             displayValue = morEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'morTra':
                             title = '**Traits:**';
                             displayValue = morTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'morAbi':
                             title = '**Hidden abilities:**';
                             displayValue = morAbi;
                             descriptionValue = 'abilities';
@@ -924,17 +924,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'mylEvi':
                             title = '**Evidence:**';
                             displayValue = mylEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'mylTra':
                             title = '**Traits:**';
                             displayValue = mylTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'mylAbi':
                             title = '**Hidden abilities:**';
                             displayValue = mylAbi;
                             descriptionValue = 'abilities';
@@ -974,17 +974,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'obaEvi':
                             title = '**Evidence:**';
                             displayValue = obaEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'obaTra':
                             title = '**Traits:**';
                             displayValue = obaTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'obaAbi':
                             title = '**Hidden abilities:**';
                             displayValue = obaAbi;
                             descriptionValue = 'abilities';
@@ -1024,17 +1024,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'oniEvi':
                             title = '**Evidence:**';
                             displayValue = oniEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'oniTra':
                             title = '**Traits:**';
                             displayValue = oniTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'oniAbi':
                             title = '**Hidden abilities:**';
                             displayValue = oniAbi;
                             descriptionValue = 'abilities';
@@ -1074,17 +1074,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'onrEvi':
                             title = '**Evidence:**';
                             displayValue = onrEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'onrTra':
                             title = '**Traits:**';
                             displayValue = onrTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'onrAbi':
                             title = '**Hidden abilities:**';
                             displayValue = onrAbi;
                             descriptionValue = 'abilities';
@@ -1124,17 +1124,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'phaEvi':
                             title = '**Evidence:**';
                             displayValue = phaEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'phaTra':
                             title = '**Traits:**';
                             displayValue = phaTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'phaAbi':
                             title = '**Hidden abilities:**';
                             displayValue = phaAbi;
                             descriptionValue = 'abilities';
@@ -1174,17 +1174,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'polEvi':
                             title = '**Evidence:**';
                             displayValue = polEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'polTra':
                             title = '**Traits:**';
                             displayValue = polTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'polAbi':
                             title = '**Hidden abilities:**';
                             displayValue = polAbi;
                             descriptionValue = 'abilities';
@@ -1224,17 +1224,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'raiEvi':
                             title = '**Evidence:**';
                             displayValue = raiEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'raiTra':
                             title = '**Traits:**';
                             displayValue = raiTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'raiAbi':
                             title = '**Hidden abilities:**';
                             displayValue = raiAbi;
                             descriptionValue = 'abilities';
@@ -1274,17 +1274,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'revEvi':
                             title = '**Evidence:**';
                             displayValue = revEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'revTra':
                             title = '**Traits:**';
                             displayValue = revTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'revAbi':
                             title = '**Hidden abilities:**';
                             displayValue = revAbi;
                             descriptionValue = 'abilities';
@@ -1324,17 +1324,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'shaEvi':
                             title = '**Evidence:**';
                             displayValue = shaEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'shaTra':
                             title = '**Traits:**';
                             displayValue = shaTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'shaAbi':
                             title = '**Hidden abilities:**';
                             displayValue = shaAbi;
                             descriptionValue = 'abilities';
@@ -1374,17 +1374,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'spiEvi':
                             title = '**Evidence:**';
                             displayValue = spiEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'spiTra':
                             title = '**Traits:**';
                             displayValue = spiTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'spiAbi':
                             title = '**Hidden abilities:**';
                             displayValue = spiAbi;
                             descriptionValue = 'abilities';
@@ -1424,17 +1424,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'thaEvi':
                             title = '**Evidence:**';
                             displayValue = thaEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'thaTra':
                             title = '**Traits:**';
                             displayValue = thaTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'thaAbi':
                             title = '**Hidden abilities:**';
                             displayValue = thaAbi;
                             descriptionValue = 'abilities';
@@ -1474,17 +1474,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'twiEvi':
                             title = '**Evidence:**';
                             displayValue = twiEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'twiTra':
                             title = '**Traits:**';
                             displayValue = twiTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'twiAbi':
                             title = '**Hidden abilities:**';
                             displayValue = twiAbi;
                             descriptionValue = 'abilities';
@@ -1524,17 +1524,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'wraEvi':
                             title = '**Evidence:**';
                             displayValue = wraEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'wraTra':
                             title = '**Traits:**';
                             displayValue = wraTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'wraAbi':
                             title = '**Hidden abilities:**';
                             displayValue = wraAbi;
                             descriptionValue = 'abilities';
@@ -1574,17 +1574,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'yokEvi':
                             title = '**Evidence:**';
                             displayValue = yokEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'yokTra':
                             title = '**Traits:**';
                             displayValue = yokTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'yokAbi':
                             title = '**Hidden abilities:**';
                             displayValue = yokAbi;
                             descriptionValue = 'abilities';
@@ -1624,17 +1624,17 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'banEvi':
+                        case 'yurEvi':
                             title = '**Evidence:**';
                             displayValue = yurEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'banTra':
+                        case 'yurTra':
                             title = '**Traits:**';
                             displayValue = yurTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'banAbi':
+                        case 'yurAbi':
                             title = '**Hidden abilities:**';
                             displayValue = yurAbi;
                             descriptionValue = 'abilities';
