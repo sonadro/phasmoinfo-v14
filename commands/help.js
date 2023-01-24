@@ -47,15 +47,15 @@ module.exports = {
         } else if (option === 'cursed') {
             // update embed
             helpEmbed
-                .setTitle('Cursed Objects')
-                .setDescription('Overview of all Cursed Objects')
+                .setTitle('Cursed Posessions')
+                .setDescription('Overview of all Cursed Posessions')
                 .addFields(
-                    { name: 'Music Box', value: 'Command: /musicbox' },
-                    { name: 'Ouija Board', value: 'Command: /ouijaboard' },
-                    { name: 'Voodo Doll', value: 'Command: /voododoll' },
-                    { name: 'Haunted Mirror', value: 'Command: /hauntedmirror' },
-                    { name: 'Summoning Circle', value: 'Command: /summoningcircle' },
-                    { name: 'Tarot Cards', value: 'Command: /tarotcards'},
+                    { name: 'Music Box', value: 'Command: /music-box' },
+                    { name: 'Ouija Board', value: 'Command: /ouija-board' },
+                    { name: 'Voodo Doll', value: 'Command: /voodo-doll' },
+                    { name: 'Haunted Mirror', value: 'Command: /haunted-mirror' },
+                    { name: 'Summoning Circle', value: 'Command: /summoning-circle' },
+                    { name: 'Tarot Cards', value: 'Command: /tarot-cards'},
                 ).setFooter({
                     text: 'Side note: It is guaranteed to get 1 cursed object in every game with standard difficulties. However this can be changed with custom difficulty!',
                 })
@@ -65,21 +65,21 @@ module.exports = {
                 .setTitle('Equipment')
                 .setDescription('Overview of all equipment')
                 .addFields(
-                    { name: 'Spirit Box', value: 'Command: /spiritbox', inline: true },
-                    { name: 'Ghost Writing Book', value: 'Command: /writingbook', inline: true },
+                    { name: 'Spirit Box', value: 'Command: /spirit-box', inline: true },
+                    { name: 'Ghost Writing Book', value: 'Command: /writing-book', inline: true },
                     { name: 'EMF Reader', value: 'Command: /emfreader', inline: true },
-                    { name: 'UV Flashlight & Glowstick', value: 'Command: /uvlight', inline: true },
-                    { name: 'Video Camera & Head Mounted Camera', value: 'Command: /videocam', inline: true },
-                    { name: 'Photo Camera', value: 'Command: /photocam', inline: true },
+                    { name: 'UV Flashlight & Glowstick', value: 'Command: /uv-light', inline: true },
+                    { name: 'Video Camera & Head Mounted Camera', value: 'Command: /video-cam', inline: true },
+                    { name: 'Photo Camera', value: 'Command: /photo-cam', inline: true },
                     { name: 'D.O.T.S. Projector', value: 'Command: /dots', inline: true },
                     { name: 'Candle', value: 'Command: /candle', inline: true },
                     { name: 'Crucifix', value: 'Command: /crucifix', inline: true },
                     { name: 'Lighter', value: 'Command: /lighter', inline: true },
-                    { name: 'Motion Sensor', value: 'Command: /motionsensor', inline: true },
-                    { name: 'Sound Sensor', value: 'Command: /soundsensor', inline: true },
+                    { name: 'Motion Sensor', value: 'Command: /motion-sensor', inline: true },
+                    { name: 'Sound Sensor', value: 'Command: /sound-sensor', inline: true },
                     { name: 'Salt', value: 'Command: /salt', inline: true },
-                    { name: 'Sanity Pills', value: 'Command: /sanitypills', inline: true },
-                    { name: 'Smudge Sticks', value: 'Command: /smudgesticks', inline: true },
+                    { name: 'Sanity Pills', value: 'Command: /sanity-pills', inline: true },
+                    { name: 'Smudge Sticks', value: 'Command: /smudge-sticks', inline: true },
                     { name: 'Parabolic Microphone', value: 'Command: /paramic', inline: true },
                     { name: 'Flashlight', value: 'Command: /flashlight', inline: true },
                     { name: 'Thermometer', value: 'Command: /thermometer', inline: true },
@@ -111,7 +111,7 @@ module.exports = {
                     { name: 'Photo priority System', value: 'Command: /pics', inline: true},
                     { name: 'How to use Smudge Sticks', value: 'Command: /smudging', inline: true},
                     { name: 'What ghost can hunt at what sanity?', value: 'Command: /sanity', inline: true},
-                    { name: 'How fast do you loose sanity', value: 'Command: /drain', inline: true},
+                    { name: 'How fast do you loose sanity', value: 'Command: /sanity-drain', inline: true},
                     {name: 'Ghost Events', value: `Command: /airball, /manifest `},
                 )
                 .setFooter({
@@ -166,8 +166,8 @@ module.exports = {
                     { name: 'Brownstone High School', value: 'Command: /highschool', inline: true},
                     { name: 'Maple Lodge Campsite', value: 'Command: /Campsite', inline: true},
                     { name: 'Prison', value: 'Command: /prison', inline: true},
-                    { name: 'Sunny Meadows Mental Institution', value: 'Command: /meadows', inline: true},
-                    { name: 'Sunny Meadows Mental Institution - RESTRICTED', value: 'Command: /restricted', inline: true},
+                    { name: 'Sunny Meadows Mental Institution', value: 'Command: /sunny-meadows', inline: true},
+                    { name: 'Sunny Meadows Mental Institution - RESTRICTED', value: 'Command: /meadows-restricted', inline: true},
                     { name: 'Camp Woodwind', value: 'Command: /woodwind', inline: true}
                 )
                 .setFooter({
@@ -189,12 +189,11 @@ module.exports = {
                 .addFields(
                     { name: 'Rule 1', value: 'Treat everyone with respect. Absolutely no harassment, toxity, witch hunting, sexism, racism, or hate speech will be tolerated.'},
                     { name: 'Rule 2', value: 'No NSFW or obscene content. This includes text, images, or links featuring nudity, sex, hard violence, or other graphically disturbing content.'},
-                    { name: 'Rule 3', value: 'No NSFW or obscene content. This includes text, images, or links featuring nudity, sex, hard violence, or other graphically disturbing content.'},
-                    { name: 'Rule 4', value: 'No spam or self-promotion (server invites, advertisements, etc) without permission from a staff member.'},
-                    { name: 'Rule 5', value: 'No swearing. We want to keep the server family friendly, so everyone can be here!'},
-                    { name: 'Rule 6', value: 'Keep the chat English so everyone can understand!'},
-                    { name: 'Rule 7', value: "Don't annoy members, stay respectful and have common sense. Things that aren't okay to do irl aren't okay to do here too!"},
-                    { name: 'Rule 8', value: 'No trolling or bad behaviour in games. Keep it Friendly and supportive no matter who you play with and how good they are in the game!'})
+                    { name: 'Rule 3', value: 'No spam or self-promotion (server invites, advertisements, etc) without permission from a staff member.'},
+                    { name: 'Rule 4', value: 'No swearing. We want to keep the server family friendly, so everyone can be here!'},
+                    { name: 'Rule 5', value: 'Keep the chat English so everyone can understand!'},
+                    { name: 'Rule 6', value: "Don't annoy members, stay respectful and have common sense. Things that aren't okay to do irl aren't okay to do here too!"},
+                    { name: 'Rule 7', value: 'No trolling or bad behaviour in games. Keep it Friendly and supportive no matter who you play with and how good they are in the game!'})
                 .setFooter({
                     text: 'Enjoy your stay!',
                 })
