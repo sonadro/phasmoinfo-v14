@@ -14,6 +14,14 @@ const client = new Discord.Client({
     ]
 });
 
+// text command handler
+client.on('MessageCreate', (message) => {
+    console.log('main file', message);
+    // import text commands
+    const textCommands = require(__dirname + '/textCommands/textCommands.js');
+    textCommands(message);
+});
+
 // command handler
 client.commands = new Collection();
 
