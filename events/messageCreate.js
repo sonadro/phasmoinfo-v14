@@ -1,7 +1,7 @@
 const { Events } = require('discord.js');
 const path = require('path');
 
-const prefix = '!';
+const { prefix } = require('../config.json');
 const textCmdDiv = '../textCommands';
 
 module.exports = {
