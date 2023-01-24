@@ -8,8 +8,8 @@ module.exports = {
     name: Events.MessageCreate,
     execute(msg) {
         if (!msg.content.startsWith(prefix)) return;
-        const temp = msg.content.replace(prefix, '');
-        const cmd = temp.trim().toLowerCase();
+        const args = msg.content.toLowerCase().replace(prefix, '').split(' ');
+        const cmd = args.shift();
 
         if (cmd === 'ping') {
             const ping = require(path.join(__dirname, textCmdDiv, '/subFolder/ping.js'));
