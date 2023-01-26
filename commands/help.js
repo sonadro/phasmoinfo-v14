@@ -5,34 +5,69 @@ module.exports = {
         .setName('help')
         .setDescription('A small guide of all our commands.')
 
-        // optional other help
-        .addStringOption(option =>
-            option
-                .setName('category')
-                .setDescription('What do you need help with?')
-                .setRequired(true)
-                .addChoices(
-                    { name: 'about the bot', value: 'about' },
-                    { name: 'cursed-posessions', value: 'cursed' },
-                    { name: 'equipment', value: 'equip' },
-                    { name: 'fun', value: 'fun'},
-                    { name: 'general', value: 'general'},
-                    { name: 'ghost', value: 'ghost'},
-                    { name: 'maps', value: 'maps'},
-                    { name: 'impressum', value: 'impressum'},
-                    { name: 'rules', value: 'rules'},
-                )
-            ),
+        // about
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('about')
+                .setDescription('About this bot.'))
+
+        // posessions
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('posessions')
+                .setDescription('A list of all commands related to cursed posessions.'))
+
+        // equipment
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('equipment')
+                .setDescription('A list of all equipment commands.'))
+
+        // fun
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('fun')
+                .setDescription('A list of all fun commands.'))
+
+        // general
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('general')
+                .setDescription('A list of all general commands.'))
+
+        // ghost
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('ghost')
+                .setDescription('A list of all ghost commands.'))
+
+        // maps
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('maps')
+                .setDescription('A list of all map commands.'))
+
+        // impressum
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('impressum')
+                .setDescription('A list of who helped making this bot possible.'))
+
+        // rules
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('rules')
+                .setDescription('Please review our rules, if you haven\'t already.')),
 
     // execute command
     async execute(interaction) {
-        const option = interaction.options.getString('category');
+        const subcommand = interaction.options.getSubcommand();
 
         // all menus has this base-embed
         const helpEmbed = new EmbedBuilder()
             .setColor('#FF5A5A')
 
-        if (option === 'about') {
+        if (subcommand === 'about') {
             // update embed
             helpEmbed
                 .setTitle('About the Phasmoinfo bot')
@@ -44,7 +79,7 @@ module.exports = {
                 ).setFooter({
                     text: 'If you find any typos and/or misinformation, please contact support! Wonder who to contact? Try /impressum',
                 })
-        } else if (option === 'cursed') {
+        } else if (subcommand === 'cursed') {
             // update embed
             helpEmbed
                 .setTitle('Cursed Posessions')
@@ -59,7 +94,7 @@ module.exports = {
                 ).setFooter({
                     text: 'Side note: It is guaranteed to get 1 cursed object in every game with standard difficulties. However this can be changed with custom difficulty!',
                 })
-        } else if (option === 'equip') {
+        } else if (subcommand === 'equip') {
             // update embed
             helpEmbed
                 .setTitle('Equipment')
@@ -87,7 +122,7 @@ module.exports = {
                 ).setFooter({
                     text: 'Boooo!',
                 })
-        } else if (option === 'fun') {
+        } else if (subcommand === 'fun') {
             // update embed
             helpEmbed
                 .setTitle('Fun commands! :D')
@@ -100,7 +135,7 @@ module.exports = {
                 ).setFooter({
                     text: 'Boooo!',
                 })
-        } else if (option === 'general') {
+        } else if (subcommand === 'general') {
             // update embed
             helpEmbed
                 .setTitle('General Information')
@@ -117,7 +152,7 @@ module.exports = {
                 .setFooter({
                     text: 'Boooo!',
                })
-        } else if (option === 'ghost') {
+        } else if (subcommand === 'ghost') {
             // update embed
             helpEmbed
                 .setTitle('Ghosts')
@@ -151,7 +186,7 @@ module.exports = {
                 .setFooter({
                     text: 'Boooo!',
             })
-        } else if (option === 'maps') {
+        } else if (subcommand === 'maps') {
             // update embed
             helpEmbed
                 .setTitle('Maps')
@@ -173,7 +208,7 @@ module.exports = {
                 .setFooter({
                     text: 'Boooo!',
             })
-        } else if (option === 'impressum') {
+        } else if (subcommand === 'impressum') {
             // update embed
             helpEmbed
                 .setTitle('Impressum')
@@ -181,7 +216,7 @@ module.exports = {
                 .setFooter({
                     text: 'Boooo!',
             })
-        } else if (option === 'rules') {
+        } else if (subcommand === 'rules') {
             // update embed
             helpEmbed
                 .setTitle('Rules')
