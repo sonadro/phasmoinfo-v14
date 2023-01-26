@@ -101,6 +101,7 @@ module.exports = {
                 .setDescription('Overview of all equipment')
                 .addFields(
                     { name: 'Spirit Box', value: 'Command: /spirit-box', inline: true },
+                    { name: 'Spirit Box Questions', value: 'Command: /spirit-questoins',inline: true },
                     { name: 'Ghost Writing Book', value: 'Command: /writing-book', inline: true },
                     { name: 'EMF Reader', value: 'Command: /emfreader', inline: true },
                     { name: 'UV Flashlight & Glowstick', value: 'Command: /uv-light', inline: true },
@@ -111,11 +112,10 @@ module.exports = {
                     { name: 'Crucifix', value: 'Command: /crucifix', inline: true },
                     { name: 'Lighter', value: 'Command: /lighter', inline: true },
                     { name: 'Motion Sensor', value: 'Command: /motion-sensor', inline: true },
-                    { name: 'Sound Sensor', value: 'Command: /sound-sensor', inline: true },
+                    { name: 'Sound Sensor & Parabolic Microphone', value: 'Command: /sound', inline: true },
                     { name: 'Salt', value: 'Command: /salt', inline: true },
                     { name: 'Sanity Pills', value: 'Command: /sanity-pills', inline: true },
                     { name: 'Smudge Sticks', value: 'Command: /smudge-sticks', inline: true },
-                    { name: 'Parabolic Microphone', value: 'Command: /paramic', inline: true },
                     { name: 'Flashlight', value: 'Command: /flashlight', inline: true },
                     { name: 'Thermometer', value: 'Command: /thermometer', inline: true },
                     { name: 'Tripod', value: 'Command: /tripod', inline: true },
