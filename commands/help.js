@@ -141,13 +141,20 @@ module.exports = {
                 .setTitle('General Information')
                 .setDescription('Overview of general commands or information')
                 .addFields(
-                    { name: 'Good to Know', value: 'Helpful knowledge. Command: /gtk', inline: true},
-                    { name: 'Activity Chart', value: 'Command: /activity', inline: true},
-                    { name: 'Photo priority System', value: 'Command: /pics', inline: true},
-                    { name: 'How to use Smudge Sticks', value: 'Command: /smudging', inline: true},
-                    { name: 'What ghost can hunt at what sanity?', value: 'Command: /sanity', inline: true},
-                    { name: 'How fast do you loose sanity', value: 'Command: /sanity-drain', inline: true},
-                    {name: 'Ghost Events', value: `Command: /airball, /manifest `},
+                    { name: '/activity-chart', value: 'A small guide to reading the activity chart', inline: true },
+                    { name: '/body-photo', value: 'What you should know about taking dead body photos', inline: true },
+                    { name: '/bone-photo', value: 'What you should know about taking bone photos', inline: true },
+                    { name: '/sanity-drain', value: 'A small guide to how sanity drain works', inline: true },
+                    { name: '/fingerprints', value: 'Tips about fingerprints', inline: true },
+                    { name: '/footprints', value: 'Tips about footprints', inline: true },
+                    { name: '/ghost-photo', value: 'Some info about ghost photos', inline: true },
+                    { name: '/gtk', value: 'Stuff that is nice to know', inline: true },
+                    { name: '/interaction-photo', value: 'Tips for taking photos of ghost interactions', inline: true },
+                    { name: '/posession-photo', value: 'Tips for taking photos of cursed posessions', inline: true },
+                    { name: '/photo-rewards', value: 'How prioritize which photos you should take', inline: true },
+                    { name: '/hunt-sanity', value: 'At what sanity ghosts can hunt you', inline: true },
+                    { name: '/smudging', value: 'What you should know about smudging', inline: true },
+                    { name: '/dirty-water-photo', value: 'Tips about taking dirty water photos', inline: true },
                 )
                 .setFooter({
                     text: 'Boooo!',
