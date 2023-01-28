@@ -4,7 +4,7 @@ const sleep = require('../functions/sleep.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('roll-challenge')
+        .setName('challenge')
         .setDescription('Rolls a random challenge!')
         .addStringOption(option =>
             option
