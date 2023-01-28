@@ -35,12 +35,6 @@ module.exports = {
                 .setName('ouija-board')
                 .setDescription('Tips for Ouija Board!'))
 
-        // ouija board questions -- UNFINISHED
-        // .addSubcommand(subcommand =>
-        //     subcommand
-        //         .setName('ouija-questions')
-        //         .setDescription('Questions for Ouija Board!'))
-
         // voodo doll
         .addSubcommand(subcommand =>
             subcommand

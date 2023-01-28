@@ -5,12 +5,6 @@ module.exports = {
         .setName('help')
         .setDescription('A small guide of all our commands.')
 
-        // about
-        .addSubcommand(subcommand =>
-            subcommand
-                .setName('about')
-                .setDescription('About this bot.'))
-
         // posessions
         .addSubcommand(subcommand =>
             subcommand
@@ -67,19 +61,7 @@ module.exports = {
         const helpEmbed = new EmbedBuilder()
             .setColor('#FF5A5A')
 
-        if (subcommand === 'about') {
-            // update embed
-            helpEmbed
-                .setTitle('About the Phasmoinfo bot')
-                .setDescription('This bot can help you when playing Phasmophobia!')
-                .addFields(
-                    { name: 'What does this bot do? ', value: 'This bot aids you in your Phasmophobia experience, by providing useful information about ghosts, maps, cursed items, equipment, etc.'},
-                    { name: 'How do I use this bot? ', value: 'I now have slash commands! Type /help, and choose a category to get started!'},
-                    { name: 'Credits: ', value: '/impressum or /help impressum'}
-                ).setFooter({
-                    text: 'If you find any typos and/or misinformation, please contact support! Wonder who to contact? Try /impressum',
-                })
-        } else if (subcommand === 'cursed') {
+        if (subcommand === 'cursed') {
             // update embed
             helpEmbed
                 .setTitle('Cursed Posessions')
@@ -101,12 +83,12 @@ module.exports = {
                 .setDescription('Overview of all equipment')
                 .addFields(
                     { name: 'Spirit Box', value: 'Command: /spirit-box', inline: true },
-                    { name: 'Spirit Box Questions', value: 'Command: /spirit-questoins',inline: true },
+                    { name: 'Spirit Box Questions', value: 'Command: /spirit-questions',inline: true },
                     { name: 'Ghost Writing Book', value: 'Command: /writing-book', inline: true },
-                    { name: 'EMF Reader', value: 'Command: /emfreader', inline: true },
+                    { name: 'EMF Reader', value: 'Command: /emf-reader', inline: true },
                     { name: 'UV Flashlight & Glowstick', value: 'Command: /uv-light', inline: true },
-                    { name: 'Video Camera & Head Mounted Camera', value: 'Command: /video-cam', inline: true },
-                    { name: 'Photo Camera', value: 'Command: /photo-cam', inline: true },
+                    { name: 'Video Camera & Head Mounted Camera', value: 'Command: /video-camera', inline: true },
+                    { name: 'Photo Camera', value: 'Command: /photo-camera', inline: true },
                     { name: 'D.O.T.S. Projector', value: 'Command: /dots', inline: true },
                     { name: 'Candle', value: 'Command: /candle', inline: true },
                     { name: 'Crucifix', value: 'Command: /crucifix', inline: true },
@@ -205,12 +187,12 @@ module.exports = {
                     { name: '42 Edgefield Road', value: 'Command: /edgefield', inline: true},
                     { name: '6 TangleWood Drive', value: 'Command: /tanglewood', inline: true},
                     { name: '13 Willow Street', value: 'Command: /willow', inline: true},
-                    { name: 'Brownstone High School', value: 'Command: /highschool', inline: true},
-                    { name: 'Maple Lodge Campsite', value: 'Command: /Campsite', inline: true},
+                    { name: 'Brownstone High School', value: 'Command: /high-school', inline: true},
+                    { name: 'Maple Lodge Campsite', value: 'Command: /maple-lodge-campsite', inline: true},
                     { name: 'Prison', value: 'Command: /prison', inline: true},
                     { name: 'Sunny Meadows Mental Institution', value: 'Command: /sunny-meadows', inline: true},
-                    { name: 'Sunny Meadows Mental Institution - RESTRICTED', value: 'Command: /meadows-restricted', inline: true},
-                    { name: 'Camp Woodwind', value: 'Command: /woodwind', inline: true}
+                    { name: 'Sunny Meadows Mental Institution - RESTRICTED', value: 'Command: /restricted-meadows', inline: true},
+                    { name: 'Camp Woodwind', value: 'Command: /camp-woodwind', inline: true}
                 )
                 .setFooter({
                     text: 'Boooo!',

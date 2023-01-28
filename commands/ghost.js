@@ -188,7 +188,7 @@ module.exports = {
         // myling
         .addSubcommand(subcommand =>
             subcommand
-                .setName('myl')
+                .setName('myling')
                 .setDescription('Shows information about the Myling.')
                 .addStringOption(option =>
                     option
