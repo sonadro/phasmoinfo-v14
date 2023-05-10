@@ -37,8 +37,8 @@ for (const file of commandFiles) {
         client.commands.set(command.data.name, command);
     } else {
         console.warn(`[WARNING] - The command at ${filePath} is missing a required "data" or "execute" property.`);
-    }
-}
+    };
+};
 
 // events handler
 const eventsPath = path.join(__dirname, 'events');
@@ -51,8 +51,8 @@ for (const file of eventFiles) {
         client.once(event.name, (...args) => event.execute(...args));
     } else {
         client.on(event.name, (...args) => event.execute(...args));
-    }
-}
+    };
+};
 
 // sign in
 client.login(token);

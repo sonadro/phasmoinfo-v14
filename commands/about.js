@@ -21,4 +21,4 @@ module.exports = {
         // respond
         await interaction.reply({ embeds: [embed] });
     }
-}
+};
