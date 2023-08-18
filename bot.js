@@ -3,33 +3,7 @@ const Discord = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-
-// Change this variable to 'true' when running bot locally. Change this value to 'false' before pushing to github
-const runningLocally = false;
-
-// bot start
-const startBot = function(local) {
-    if (!local) {
-        console.log('running replit startup');
-        // This will start the bot for REPLIT:
-        const keepAlive = require(__dirname + '/server.js');
-        const { exec } = require('child_process');
-        const token = process.env['TOKEN'];
-
-        // start bot
-        keepAlive();
-        client.login(token);
-    } else {
-        console.log('running local startup ');
-        // This will start the bot LOCALLY on your pc
-
-        // grab local variables
-        const { token } = require('./config.json');
-
-        // sign in
-        client.login(token);
-    };
-};
+const keepAlive = require('./server');
 
 // new client instance
 const client = new Discord.Client({
@@ -72,4 +46,14 @@ for (const file of eventFiles) {
 };
 
 // start bot
-startBot(runningLocally);
+
+// REPLIT START (comment out while testing, uncomment before push):
+const keepAlive = require(__dirname + '/server.js');
+const { exec } = require('child_process');
+const token = process.env['TOKEN'];
+keepAlive();
+client.login(token);
+
+// LOCAL TESTING START (uncomment while testing, comment out before push);
+// const { token } = require('./config.json');
+// client.login(token);
