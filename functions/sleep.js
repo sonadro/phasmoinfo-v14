@@ -4,7 +4,7 @@ const wait = function(ms) {
 
     while(newTime - startTime < ms) {
         newTime = Date.now();
-    }
-}
+    };
+};
 
 module.exports = wait;

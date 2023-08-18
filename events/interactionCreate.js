@@ -13,7 +13,7 @@ module.exports = {
         if (!command) {
             console.error(`No command matching ${interaction.commandName} was found.`);
             return;
-        }
+        };
 
         // execute command or log error, if there is any
         try {
@@ -21,6 +21,6 @@ module.exports = {
         } catch (err) {
             console.error(`Error executing command '${interaction.commandName}'`);
             console.error(err);
-        }
+        };
     },
 };

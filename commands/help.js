@@ -59,7 +59,7 @@ module.exports = {
 
         // all menus has this base-embed
         const helpEmbed = new EmbedBuilder()
-            .setColor('#FF5A5A')
+            .setColor('#FF5A5A');
 
         if (subcommand === 'cursed') {
             // update embed
@@ -75,7 +75,7 @@ module.exports = {
                     { name: 'Tarot Cards', value: 'Command: /tarot-cards'},
                 ).setFooter({
                     text: 'Side note: It is guaranteed to get 1 cursed object in every game with standard difficulties. However this can be changed with custom difficulty!',
-                })
+                });
         } else if (subcommand === 'equip') {
             // update embed
             helpEmbed
@@ -103,7 +103,7 @@ module.exports = {
                     { name: 'Tripod', value: 'Command: /tripod', inline: true },
                 ).setFooter({
                     text: 'Boooo!',
-                })
+                });
         } else if (subcommand === 'fun') {
             // update embed
             helpEmbed
@@ -116,7 +116,7 @@ module.exports = {
                     { name: '/difficulty', value: 'The bot will choose a random difficulty for you!' },
                 ).setFooter({
                     text: 'Boooo!',
-                })
+                });
         } else if (subcommand === 'general') {
             // update embed
             helpEmbed
@@ -140,7 +140,7 @@ module.exports = {
                 )
                 .setFooter({
                     text: 'Boooo!',
-               })
+               });
         } else if (subcommand === 'ghost') {
             // update embed
             helpEmbed
@@ -174,7 +174,7 @@ module.exports = {
                 )
                 .setFooter({
                     text: 'Boooo!',
-            })
+            });
         } else if (subcommand === 'maps') {
             // update embed
             helpEmbed
@@ -196,7 +196,7 @@ module.exports = {
                 )
                 .setFooter({
                     text: 'Boooo!',
-            })
+            });
         } else if (subcommand === 'impressum') {
             // update embed
             helpEmbed
@@ -204,7 +204,7 @@ module.exports = {
                 .setDescription('\nInfo about ghosts, events and general stuff - Insym: \nhttps://www.youtube.com/watch?v=6c00T2duoEg \nhttps://www.twitch.tv/insym \n  \nMaps w/ cursed posession locations - Fantismal: \nhttps://imgur.com/a/iEI0tJo \n  \nEquipment, cursed objects, events: \nhttps://phasmophobia.fandom.com/wiki/Main_Page \n  \nMoroi, Deogen & Thaye - Psycho: \n https://www.youtube.com/watch?v=VjbCps35D5Q \nhttps://www.twitch.tv/psychohypnotic \n \nCoded by: \nNullody#5271 & juju~#2239 \n  \nSupport: https://discord.gg/wTTQSkCcPE')
                 .setFooter({
                     text: 'Boooo!',
-            })
+            });
         } else if (subcommand === 'rules') {
             // update embed
             helpEmbed
@@ -220,10 +220,10 @@ module.exports = {
                     { name: 'Rule 7', value: 'No trolling or bad behaviour in games. Keep it Friendly and supportive no matter who you play with and how good they are in the game!'})
                 .setFooter({
                     text: 'Enjoy your stay!',
-                })
-        }
+                });
+        };
 
         // once embed has been updated, send it!
         await interaction.reply({ embeds: [helpEmbed] });
     }
-}
+};

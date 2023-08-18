@@ -448,7 +448,7 @@ module.exports = {
                 .setColor('#52FFFA')
                 .setFooter({
                     text: 'Booo!',
-                })
+                });
 
             // GET SUBCOMMAND -------
             if (interaction.options.getSubcommand() === 'banshee') {
@@ -467,7 +467,7 @@ module.exports = {
                             { name: '**Evidence:**', value: banEvi },
                             { name: '**Traits:**', value: banTra },
                             { name: '**Hidden abilities:**', value: banAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -489,14 +489,14 @@ module.exports = {
                             displayValue = banAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -517,7 +517,7 @@ module.exports = {
                             { name: '**Evidence:**', value: demEvi },
                             { name: '**Traits:**', value: demTra },
                             { name: '**Hidden abilities:**', value: demAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -539,14 +539,14 @@ module.exports = {
                             displayValue = demAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -567,7 +567,7 @@ module.exports = {
                             { name: '**Evidence:**', value: deoEvi },
                             { name: '**Traits:**', value: deoTra },
                             { name: '**Hidden abilities:**', value: deoAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -589,14 +589,14 @@ module.exports = {
                             displayValue = deoAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -617,7 +617,7 @@ module.exports = {
                             { name: '**Evidence:**', value: gorEvi },
                             { name: '**Traits:**', value: gorTra },
                             { name: '**Hidden abilities:**', value: gorAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -639,14 +639,14 @@ module.exports = {
                             displayValue = gorAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -667,7 +667,7 @@ module.exports = {
                             { name: '**Evidence:**', value: hanEvi },
                             { name: '**Traits:**', value: hanTra },
                             { name: '**Hidden abilities:**', value: hanAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -689,14 +689,14 @@ module.exports = {
                             displayValue = hanAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -717,7 +717,7 @@ module.exports = {
                             { name: '**Evidence:**', value: jinEvi },
                             { name: '**Traits:**', value: jinTra },
                             { name: '**Hidden abilities:**', value: jinAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -745,8 +745,8 @@ module.exports = {
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -767,7 +767,7 @@ module.exports = {
                             { name: '**Evidence:**', value: marEvi },
                             { name: '**Traits:**', value: marTra },
                             { name: '**Hidden abilities:**', value: marAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -789,14 +789,14 @@ module.exports = {
                             displayValue = marAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -817,7 +817,7 @@ module.exports = {
                             { name: '**Evidence:**', value: mimEvi },
                             { name: '**Traits:**', value: mimTra },
                             { name: '**Hidden abilities:**', value: mimAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -839,14 +839,14 @@ module.exports = {
                             displayValue = mimAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -867,7 +867,7 @@ module.exports = {
                             { name: '**Evidence:**', value: morEvi },
                             { name: '**Traits:**', value: morTra },
                             { name: '**Hidden abilities:**', value: morAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -889,14 +889,14 @@ module.exports = {
                             displayValue = morAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -917,7 +917,7 @@ module.exports = {
                             { name: '**Evidence:**', value: mylEvi },
                             { name: '**Traits:**', value: mylTra },
                             { name: '**Hidden abilities:**', value: mylAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -939,14 +939,14 @@ module.exports = {
                             displayValue = mylAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -967,7 +967,7 @@ module.exports = {
                             { name: '**Evidence:**', value: obaEvi },
                             { name: '**Traits:**', value: obaTra },
                             { name: '**Hidden abilities:**', value: obaAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -989,14 +989,14 @@ module.exports = {
                             displayValue = obaAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1017,7 +1017,7 @@ module.exports = {
                             { name: '**Evidence:**', value: oniEvi },
                             { name: '**Traits:**', value: oniTra },
                             { name: '**Hidden abilities:**', value: oniAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1039,14 +1039,14 @@ module.exports = {
                             displayValue = oniAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1067,7 +1067,7 @@ module.exports = {
                             { name: '**Evidence:**', value: onrEvi },
                             { name: '**Traits:**', value: onrTra },
                             { name: '**Hidden abilities:**', value: onrAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1089,14 +1089,14 @@ module.exports = {
                             displayValue = onrAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1117,7 +1117,7 @@ module.exports = {
                             { name: '**Evidence:**', value: phaEvi },
                             { name: '**Traits:**', value: phaTra },
                             { name: '**Hidden abilities:**', value: phaAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1139,14 +1139,14 @@ module.exports = {
                             displayValue = phaAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1167,7 +1167,7 @@ module.exports = {
                             { name: '**Evidence:**', value: polEvi },
                             { name: '**Traits:**', value: polTra },
                             { name: '**Hidden abilities:**', value: polAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1189,14 +1189,14 @@ module.exports = {
                             displayValue = polAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1217,7 +1217,7 @@ module.exports = {
                             { name: '**Evidence:**', value: raiEvi },
                             { name: '**Traits:**', value: raiTra },
                             { name: '**Hidden abilities:**', value: raiAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1239,14 +1239,14 @@ module.exports = {
                             displayValue = raiAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1267,7 +1267,7 @@ module.exports = {
                             { name: '**Evidence:**', value: revEvi },
                             { name: '**Traits:**', value: revTra },
                             { name: '**Hidden abilities:**', value: revAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1289,14 +1289,14 @@ module.exports = {
                             displayValue = revAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1317,7 +1317,7 @@ module.exports = {
                             { name: '**Evidence:**', value: shaEvi },
                             { name: '**Traits:**', value: shaTra },
                             { name: '**Hidden abilities:**', value: shaAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1339,14 +1339,14 @@ module.exports = {
                             displayValue = shaAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1367,7 +1367,7 @@ module.exports = {
                             { name: '**Evidence:**', value: spiEvi },
                             { name: '**Traits:**', value: spiTra },
                             { name: '**Hidden abilities:**', value: spiAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1389,14 +1389,14 @@ module.exports = {
                             displayValue = spiAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1417,7 +1417,7 @@ module.exports = {
                             { name: '**Evidence:**', value: thaEvi },
                             { name: '**Traits:**', value: thaTra },
                             { name: '**Hidden abilities:**', value: thaAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1439,14 +1439,14 @@ module.exports = {
                             displayValue = thaAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1467,7 +1467,7 @@ module.exports = {
                             { name: '**Evidence:**', value: twiEvi },
                             { name: '**Traits:**', value: twiTra },
                             { name: '**Hidden abilities:**', value: twiAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1489,14 +1489,14 @@ module.exports = {
                             displayValue = twiAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1517,7 +1517,7 @@ module.exports = {
                             { name: '**Evidence:**', value: wraEvi },
                             { name: '**Traits:**', value: wraTra },
                             { name: '**Hidden abilities:**', value: wraAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1539,14 +1539,14 @@ module.exports = {
                             displayValue = wraAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1567,7 +1567,7 @@ module.exports = {
                             { name: '**Evidence:**', value: yokEvi },
                             { name: '**Traits:**', value: yokTra },
                             { name: '**Hidden abilities:**', value: yokAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1589,14 +1589,14 @@ module.exports = {
                             displayValue = yokAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
 
@@ -1617,7 +1617,7 @@ module.exports = {
                             { name: '**Evidence:**', value: yurEvi },
                             { name: '**Traits:**', value: yurTra },
                             { name: '**Hidden abilities:**', value: yurAbi }
-                        )
+                        );
                 } else {
                     // if specifics are displayed, change values to reply with
                     let title;
@@ -1639,16 +1639,16 @@ module.exports = {
                             displayValue = yurAbi;
                             descriptionValue = 'abilities';
                             break;
-                    }
+                    };
 
                     // update the embed
                     ghostEmbed
                         .addFields(
                             { name: title, value: displayValue }
-                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
-                }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`);
+                };
                 // reply with embed
                 await interaction.reply({ embeds: [ghostEmbed] });
-            }
+            };
         }
-}
+};

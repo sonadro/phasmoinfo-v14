@@ -190,4 +190,4 @@ module.exports = {
             // respond
             interaction.reply({ embeds: [mapEmbed] });
         }
-}
+};

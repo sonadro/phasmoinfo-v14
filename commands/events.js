@@ -21,7 +21,7 @@ module.exports = {
     async execute(interaction) {
         // global properties
         const eventsEmbed = new EmbedBuilder()
-            .setColor('#FFF75E')
+            .setColor('#FFF75E');
         
         // local properties
         if (interaction.options.getSubcommand() === 'airball') {
@@ -40,7 +40,7 @@ module.exports = {
                 .setFooter({
                     text: 'Boooo! :D'
                 });
-        }
+        };
         await interaction.reply({ embeds: [eventsEmbed] });
     }
-}
+};

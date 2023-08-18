@@ -65,10 +65,10 @@ module.exports = {
                     await interaction.editReply(`Your card is ${card}!\n**Green**`);
                 } else if (colorPicker === 1) {
                     await interaction.editReply(`Your card is ${card}!\n**Red**`);
-                }
+                };
             } else {
                 await interaction.reply(`Your card is ${card}!`);
-            }
+            };
         };
     }
-}
+};

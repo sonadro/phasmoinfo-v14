@@ -196,4 +196,4 @@ module.exports = {
         // response
         interaction.reply({ embeds: [generalEmbed] });
     }
-}
+};
