@@ -8,3 +8,6 @@ config.json
 delete-all.js
 deploy-dev.js
 deploy-global.js
+
+# package-lock.json is hidden in replit so it has to be ignored
+package-lock.json
