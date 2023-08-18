@@ -1,25 +1,42 @@
-// require necessary discord.js classes
+// import necessary discord.js classes
 const Discord = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { token } = require('./config.json');
+
+// Change this variable to 'true' when running bot locally. Change this value to 'false' before pushing to github
+const runningLocally = false;
+
+// bot start
+const startBot = function(local) {
+    if (!local) {
+        console.log('running replit startup');
+        // This will start the bot for REPLIT:
+        const keepAlive = require(__dirname + '/server.js');
+        const { exec } = require('child_process');
+        const token = process.env['TOKEN'];
+
+        // start bot
+        keepAlive();
+        client.login(token);
+    } else {
+        console.log('running local startup ');
+        // This will start the bot LOCALLY on your pc
+
+        // grab local variables
+        const { token } = require('./config.json');
+
+        // sign in
+        client.login(token);
+    };
+};
 
 // new client instance
 const client = new Discord.Client({
     intents: [
         GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent
+        GatewayIntentBits.GuildMessages
     ]
-});
-
-// text command handler
-client.on('MessageCreate', (message) => {
-    console.log('main file', message);
-    // import text commands
-    const textCommands = require(__dirname + '/textCommands/textCommands.js');
-    textCommands(message);
 });
 
 // command handler
@@ -54,5 +71,5 @@ for (const file of eventFiles) {
     }
 }
 
-// sign in
-client.login(token);
+// start bot
+startBot(runningLocally);
