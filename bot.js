@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const keepAlive = require('./server');
+const { token } = require('./config.json');
 
 // new client instance
 const client = new Discord.Client({
@@ -46,14 +46,4 @@ for (const file of eventFiles) {
 };
 
 // start bot
-
-// REPLIT START (comment out while testing, uncomment before push):
-const keepAlive = require(__dirname + '/server.js');
-const { exec } = require('child_process');
-const token = process.env['TOKEN'];
-keepAlive();
 client.login(token);
-
-// LOCAL TESTING START (uncomment while testing, comment out before push);
-// const { token } = require('./config.json');
-// client.login(token);

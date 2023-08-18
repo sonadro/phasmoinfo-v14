@@ -1,13 +1,2 @@
-# Node modules folder - you don't want this on GitHub
 node_modules/
-
-# Config variables (such as token, clientId, guildId, that are used locally, these are stored as secrets in REPLIT)
 config.json
-
-# Local deployment scripts (different than on REPLIT)
-delete-all.js
-deploy-dev.js
-deploy-global.js
-
-# package-lock.json is hidden in replit so it has to be ignored
-package-lock.json
