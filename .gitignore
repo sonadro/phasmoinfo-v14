@@ -1,2 +1,13 @@
+# ignore node modules
 node_modules/
+
+# ignore local config variables - they are used as secrets in replit
 config.json
+
+# ignore package-lock (replit hides this file, so we can't have it on github)
+package-lock.json
+
+# ignore deployment scripts, they will be different on replit
+delete-all.js
+deploy-dev.js
+deploy-global.js

@@ -3,7 +3,9 @@ const Discord = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { token } = require('./config.json');
+
+// if running LOCALLY, local = true; else, local = false; (eg. when pushing to github)
+const local = false;
 
 // new client instance
 const client = new Discord.Client({
@@ -46,4 +48,14 @@ for (const file of eventFiles) {
 };
 
 // start bot
-client.login(token);
+if (!local) {
+    // REPLIT START
+    const token = process.env['TOKEN'];
+    const keepAlive = require(__dirname + '/server.js');
+    keepAlive();
+    client.login(token);
+} else {
+    // LOCAL START
+    const { token } = require('./config.json');
+    client.login(token);
+};
