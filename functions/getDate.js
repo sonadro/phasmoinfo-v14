@@ -73,7 +73,9 @@ const getTime = function() {
     // create new date object
     const dateObj = new Date();
     // hour
-    let hour = dateObj.getHours();
+    let hour = dateObj.getHours() + 2;
+
+    hour = hour % 24;
 
     if (hour.toString().length == 1) {
         let temp = '0';
