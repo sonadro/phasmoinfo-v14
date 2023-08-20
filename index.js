@@ -49,9 +49,16 @@ for (const file of eventFiles) {
 
 // start bot
 if (!local) {
-    // REPLIT START
+    // replit variables
     const token = process.env['TOKEN'];
     const keepAlive = require(__dirname + '/server.js');
+
+    // dis-uniter
+    const replitDisUniter = require('replit-dis-uniter');
+    const bot = client;
+    replitDisUniter(bot);
+
+    // replit start
     keepAlive();
     client.login(token);
 } else {
