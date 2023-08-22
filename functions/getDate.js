@@ -6,7 +6,7 @@ const getDate = function() {
     // get current day
     let day = dateObj.getDate();
 
-    switch(day) {
+    switch(day % 10) {
         case 1:
             day += 'st';
             break;

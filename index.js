@@ -4,8 +4,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 
-// if running LOCALLY, local = true; else, local = false; (eg. when pushing to github)
-const local = false;
+// get local variable
+const { local } = require('./config.json');
 
 // new client instance
 const client = new Discord.Client({
