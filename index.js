@@ -48,7 +48,7 @@ for (const file of eventFiles) {
 };
 
 // start bot
-if (!local) {
+if (local == 'false') {
     // replit variables
     const token = process.env['TOKEN'];
     const keepAlive = require(__dirname + '/server.js');
