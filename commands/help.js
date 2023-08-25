@@ -55,11 +55,12 @@ module.exports = {
 
     // execute command
     async execute(interaction) {
+        await interaction.deferReply();
         const subcommand = interaction.options.getSubcommand();
 
         // all menus has this base-embed
         const helpEmbed = new EmbedBuilder()
-            .setColor('#FF5A5A');
+            .setColor('#FF5A5A')
 
         if (subcommand === 'cursed') {
             // update embed
@@ -73,10 +74,11 @@ module.exports = {
                     { name: 'Haunted Mirror', value: 'Command: /haunted-mirror' },
                     { name: 'Summoning Circle', value: 'Command: /summoning-circle' },
                     { name: 'Tarot Cards', value: 'Command: /tarot-cards'},
+                    { name: 'Monkey Paw', value: 'Command: /monkey-paw'},
                 ).setFooter({
                     text: 'Side note: It is guaranteed to get 1 cursed object in every game with standard difficulties. However this can be changed with custom difficulty!',
-                });
-        } else if (subcommand === 'equip') {
+                })
+        } else if (subcommand === 'equipment') {
             // update embed
             helpEmbed
                 .setTitle('Equipment')
@@ -86,24 +88,26 @@ module.exports = {
                     { name: 'Spirit Box Questions', value: 'Command: /spirit-questions',inline: true },
                     { name: 'Ghost Writing Book', value: 'Command: /writing-book', inline: true },
                     { name: 'EMF Reader', value: 'Command: /emf-reader', inline: true },
-                    { name: 'UV Flashlight & Glowstick', value: 'Command: /uv-light', inline: true },
-                    { name: 'Video Camera & Head Mounted Camera', value: 'Command: /video-camera', inline: true },
+                    { name: 'UV light', value: 'Command: /uv-light', inline: true },
+                    { name: 'Video Camera', value: 'Command: /video-camera', inline: true },
                     { name: 'Photo Camera', value: 'Command: /photo-camera', inline: true },
+                    { name: 'Head gear', value: 'Command: /head-gear', inline: true },
                     { name: 'D.O.T.S. Projector', value: 'Command: /dots', inline: true },
-                    { name: 'Candle', value: 'Command: /candle', inline: true },
+                    { name: 'Firelight', value: 'Command: /firelight', inline: true },
                     { name: 'Crucifix', value: 'Command: /crucifix', inline: true },
-                    { name: 'Lighter', value: 'Command: /lighter', inline: true },
+                    { name: 'Igniter', value: 'Command: /igniter', inline: true },
                     { name: 'Motion Sensor', value: 'Command: /motion-sensor', inline: true },
-                    { name: 'Sound Sensor & Parabolic Microphone', value: 'Command: /sound', inline: true },
+                    { name: 'Sound Sensor', value: 'Command: /sound', inline: true },
+                    { name: 'Parabolic microphone', value: 'Command: /parabolic', inline: true },
                     { name: 'Salt', value: 'Command: /salt', inline: true },
-                    { name: 'Sanity Pills', value: 'Command: /sanity-pills', inline: true },
-                    { name: 'Smudge Sticks', value: 'Command: /smudge-sticks', inline: true },
+                    { name: 'Sanity medication', value: 'Command: /medication', inline: true },
+                    { name: 'Incence', value: 'Command: /incence', inline: true },
                     { name: 'Flashlight', value: 'Command: /flashlight', inline: true },
                     { name: 'Thermometer', value: 'Command: /thermometer', inline: true },
                     { name: 'Tripod', value: 'Command: /tripod', inline: true },
                 ).setFooter({
                     text: 'Boooo!',
-                });
+                })
         } else if (subcommand === 'fun') {
             // update embed
             helpEmbed
@@ -116,7 +120,7 @@ module.exports = {
                     { name: '/difficulty', value: 'The bot will choose a random difficulty for you!' },
                 ).setFooter({
                     text: 'Boooo!',
-                });
+                })
         } else if (subcommand === 'general') {
             // update embed
             helpEmbed
@@ -140,7 +144,7 @@ module.exports = {
                 )
                 .setFooter({
                     text: 'Boooo!',
-               });
+               })
         } else if (subcommand === 'ghost') {
             // update embed
             helpEmbed
@@ -174,7 +178,7 @@ module.exports = {
                 )
                 .setFooter({
                     text: 'Boooo!',
-            });
+            })
         } else if (subcommand === 'maps') {
             // update embed
             helpEmbed
@@ -196,7 +200,7 @@ module.exports = {
                 )
                 .setFooter({
                     text: 'Boooo!',
-            });
+            })
         } else if (subcommand === 'impressum') {
             // update embed
             helpEmbed
@@ -204,7 +208,7 @@ module.exports = {
                 .setDescription('\nInfo about ghosts, events and general stuff - Insym: \nhttps://www.youtube.com/watch?v=6c00T2duoEg \nhttps://www.twitch.tv/insym \n  \nMaps w/ cursed posession locations - Fantismal: \nhttps://imgur.com/a/iEI0tJo \n  \nEquipment, cursed objects, events: \nhttps://phasmophobia.fandom.com/wiki/Main_Page \n  \nMoroi, Deogen & Thaye - Psycho: \n https://www.youtube.com/watch?v=VjbCps35D5Q \nhttps://www.twitch.tv/psychohypnotic \n \nCoded by: \nNullody#5271 & juju~#2239 \n  \nSupport: https://discord.gg/wTTQSkCcPE')
                 .setFooter({
                     text: 'Boooo!',
-            });
+            })
         } else if (subcommand === 'rules') {
             // update embed
             helpEmbed
@@ -220,10 +224,10 @@ module.exports = {
                     { name: 'Rule 7', value: 'No trolling or bad behaviour in games. Keep it Friendly and supportive no matter who you play with and how good they are in the game!'})
                 .setFooter({
                     text: 'Enjoy your stay!',
-                });
-        };
+                })
+        }
 
         // once embed has been updated, send it!
-        await interaction.reply({ embeds: [helpEmbed] });
+        await interaction.editReply({ embeds: [helpEmbed] });
     }
-};
+}

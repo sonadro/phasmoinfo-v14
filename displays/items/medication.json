@@ -1,0 +1,6 @@
+{
+    "pillsgen": "Hold it in hand and use it with primary use key (default: right click) to regain a bit of your sanity. The empty bottle will be thrown on the floor and is no longer useable. \nThe amount of player sanity that is replenished depends on the played difficulty: \nAmateur - 40% \nIntermediate - 35% \nProfessional - 30%\nNightmare - 25% \nInsanity - 20%",
+    "pillsT1": "-> unlocked at level 16 \nDrink this bottle of vintage snake oil to restore a portion of your sanity! It will take a few seconds to complete the restoration! \n-> 30s restoration speed, consumeable",
+    "pillsT2": "-> unlocked at level 39 \nA much more regulated product, taking less time to restore your sanity! \n-> 20s restoration speed, consumeable",
+	"pillsT3": "-> unlocked at level 77 \nThis Adrenaline shot will restore your sanity way faster. Additional you will not lose any sprint stamina for the duration of it's effect! \n-> 10s restoration time, 10, sprint boost, consumeable"
+}

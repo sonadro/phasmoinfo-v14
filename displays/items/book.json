@@ -1,0 +1,6 @@
+{
+    "bookgen": "place the Book on the Floor with secondary action (default: F) in the Ghostroom, it will show the range the Ghost can interact with it. If Ghost Writing is an Evidence type for the ghost, the ghost has a chance of interacting with the book by writing in it. When this happens, the book will slightly levitate and the pen will start to frantically scribble on the pages visually and audibly, followed by the pen being thrown on the ground. The ghost can also write in the book by throwing or moving it. \nIf the book has moved without being written in, writing is not an evidence (excluding nightmare). Once written in, the book can be photographed to receive photo reward.",
+    "bookT1": "This paper notebook has to be placed near Ghost activity to get results. It is small and doesn't has much range, it may take some time before anything happens! \n-> 3m range, low interaction rate",
+    "bookT2": "-> unlocked at level 23 \nThe book with parchment pages and a leather case is way more noticeable for Ghosts, it may take less time to get interaction.\n-> 4m range, medium interaction rate",
+	"bookT3": "-> unlocked at level 64 \nA Grimore with metallic accents, way more noticeable for ghosts. \n-> 5m range, high interaction rate"
+}

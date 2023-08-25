@@ -1,0 +1,6 @@
+{
+    "motiongen": "Motion sensors can be used to track the movement of the ghost when placed on walls with secondary use key (default: F). They get displayed on the map in the van as red bar. \nPutting a motion sensor waist-high is the safest way to get results!",
+    "motionT1": "-> unlocked at level 5 \nA previous wilflife camera, will flash if something moves in front of it. \n-> line sensor shape, light indicator, placeable, electronic",
+    "motionT2": "-> unlocked at level 45 \nThis sensor comes with two different modes, a longer range and a sound indicator. You can toggle it's laser shape by interacting with the sensor after it has been placed! \n-> line or cone sensor shape, light indicator, audio indicator, placeable, electronic",
+	"motionT3": "-> unlocked at level 74 \nPlace this motion sensing camera uon the floor near to the ghost. When activated it will turn and flash a bright light whenever a ghost enters or leaves it's detection zone. \n-> ircle sensor shape, scanning, light indicator, audio indicator, placeable, electronic"
+}

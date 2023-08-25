@@ -2,4 +2,4 @@
     "banEvi": "Fingerprints\nGhost Orbs\nD.O.T.S. Projector",
     "banTra": "Banshees  often wander toward their target when roaming. \n \nIf you point a Parabolic Microphone at a Banshee, there is a small chance to hear a special scream. \n \nA Banshee is more likely to sing during ghost events. These will drain extra 5% sanity on the Banshee's target\n\nCan Hunt at 50% Sanity, **but it only check their targets sanity % for initiating a hunt in multiplayer!**",
     "banAbi": "**The Banshee will prioritize and target a player** \nThe Banshee will only hunt the target. If the target is not in the house, it can hunt other players instead, **without choosing a new target.** \nIf the target dies, the Banshee will choose a new target."
-}
+  }

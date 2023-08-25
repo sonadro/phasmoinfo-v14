@@ -7,6 +7,7 @@ module.exports = {
     
     // execute command
     async execute(interaction) {
+        await interaction.deferReply();
         const embed = new EmbedBuilder()
             .setTitle('About the Phasmoinfo bot')
             .setDescription('This bot can help you when playing Phasmophobia!')
@@ -19,6 +20,6 @@ module.exports = {
             });
         
         // respond
-        await interaction.reply({ embeds: [embed] });
+        await interaction.editReply({ embeds: [embed] });
     }
-};
+}

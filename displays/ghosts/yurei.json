@@ -1,5 +1,5 @@
 {
     "yurEvi": "Ghost Orbs \nFreezing Temperatures \nD.O.T.S. Projector",
-    "yurTra": "The Yurei can't leave the ghost room for 90 seconds after being smudged. \nPlacing motion sensor at all exits of the room, will tell you if the ghost leaves the room or not. Smudge the ghost, and start a timer of 90 seconds!\n\nCan Hunt at 50% Sanity.",
+    "yurTra": "The Yurei can't leave the ghost room for 90 seconds after being incence was lighted. \nPlacing motion sensor at all exits of the room, will tell you if the ghost leaves the room or not. repele the ghost with incence, and start a timer of 90 seconds!\n\nCan Hunt at 50% Sanity.",
     "yurAbi": "The Yurei can drop your sanity by 14%, and when doing so, it will fully close a door nearby. It can't use the ability in a Room witout doors! \nNote: The delayed closing door sound isn't linked to the Yurei ability! Every Door closed by a ghost have a delayed sound, the Yurei will just close them more frequently."
 }

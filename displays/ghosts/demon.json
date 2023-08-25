@@ -1,5 +1,5 @@
 {
     "demEvi": "Fingerprints \nGhost Writing \nFreezing Temperatures",
-    "demTra": "The crucifix has a 5m range, instead of 3m. \n \nThe Demon can hunt every 20 seconds, smudging it will prevent it from hunting for 60 seconds. \n \nThe Demon can chain hunt, making it really hard to get evidence at times.\n\nCan Hunt at 70% Sanity, or any Sanity (See abilities)",
+    "demTra": "The crucifix has the range depending on the used Tier (/crucifix) + 50%, instead of 3m. \n \nThe Demon can hunt every 20 seconds, smudging it will prevent it from hunting for 60 seconds. \n \nThe Demon can chain hunt, making it really hard to get evidence at times.\n\nCan Hunt at 70% Sanity, or any Sanity (See abilities)",
     "demAbi": "The Demon has a small chance to initiate a hunt at **any sanity.**"
 }

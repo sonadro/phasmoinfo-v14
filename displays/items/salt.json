@@ -1,0 +1,6 @@
+{
+    "saltgen": "Salt piles can be used to detect footsteps and get UV evidence. Place the Salt on the floor near the ghost with secondary use key (default: F). \nGhosts can't walk through salt durnig hunts! Taking pictures will give photo rewards.",
+    "saltT1": "-> unlocked at level 9 \nYou can place smal piles of salt with this container. \n-> 2 uses, consumeable",
+    "saltT2": "-> unlocked at level 43 \nLarger container that holds more salt. You place it in lines to block wider passages. \n-> 3 uses, consumeable",
+	"saltT3": "-> unlocked at level 68 \nMore powerful salt, blocks the way of an inactive ghost, forcing it to turn around. If a ghost steps in it during a hunt it will slow the ghost down for a bit to make it easier for you to escape. \n-> 3 uses, 2s slowing down ghost during hunts, consumeable"
+}

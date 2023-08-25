@@ -29,17 +29,11 @@ module.exports = {
             .setName('sanity-drain')
             .setDescription('What you should know about sanity drain'))
 
-    // fingerprints
+    // Ultraviolet
     .addSubcommand(subcommand =>
         subcommand
-            .setName('fingerprints')
-            .setDescription('What you should know about fingerprints'))
-
-    // footprints
-    .addSubcommand(subcommand =>
-        subcommand
-            .setName('footprints')
-            .setDescription('What you should know about footprints'))
+            .setName('ultraviolet')
+            .setDescription('What you should know about Ultraviolet'))
 
     // ghost photo
     .addSubcommand(subcommand =>
@@ -77,11 +71,11 @@ module.exports = {
             .setName('hunt-sanity')
             .setDescription('What sanity ghosts can hunt at'))
 
-    // smudge sticks
+    // incence
     .addSubcommand(subcommand =>
         subcommand
             .setName('smudging')
-            .setDescription('What you should know about using smudge sticks'))
+            .setDescription('What you should know about using incence'))
 
     // dirty water photo
     .addSubcommand(subcommand =>
@@ -91,6 +85,7 @@ module.exports = {
 
     // execute command
     async execute(interaction) {
+        await interaction.deferReply();
         const subcommand = interaction.options.getSubcommand();
 
         // global embed properties
@@ -123,35 +118,26 @@ module.exports = {
                 .setTitle('Sanity drain')
                 .setDescription('Your sanity will drain depending on Light and Ghostevents')
                 .addFields(
-                    { name: "**Drain Percentage**", value: "**Solo Large Map** 3%, **Small Map** 7,2% per Minute \n**Multiplayer Large Map** 6%, **Small Map** 14,4% per Minute \n **With Candle in Hand** 0% \n**Standing in light** depending on how much light you are exposed to \n**Ghost Event** 10% (except Oni and Banshee singing Ghost event) \n**Ghost reveal/hunt and Ghost within 10m** 0,2% per Second"},
+                    { name: "**Drain Percentage**", value: "At 100% Saity drain settings: **Solo Large Map** 3%, **Small Map** 7,2% per Minute \n**Multiplayer Large Map** 6%, **Small Map** 14,4% per Minute \n **With Firelight in Hand** depening on the Tier (/firelight) \n**Standing in light** depending on how much light you are exposed to \n**Ghost Event** 10% (except Oni and Banshee singing Ghost event) \n**Ghost reveal/hunt and Ghost within 10m** 0,2% per Second"},
                 );
-        } else if (subcommand === 'fingerprints') {
+        } else if (subcommand === 'ultraviolet') {
             generalEmbed
-                .setTitle('Fingerprints')
-                .setDescription('Once per fingerprint! UV light does not have to be shining on the fingerprints for the picture to count towards monetary rewards.')
-                .setImage('https://cdn.discordapp.com/attachments/937732109735452714/938122225805058048/unknown.png')
+                .setTitle('Ultraviolet')
+                .setDescription('Once per left evidence! UV light does have to be shining on the ultraviolet or been charged to take a picture to count towards monetary rewards.')
                 .setFooter({
-                    text: `Above is an example of a photo that doesn't visually show a fingerprint, but the fingerprint is still on the door, so it still counts.`}
+                    text: `Booooo!`}
                 );
-        } else if (subcommand === 'footprints') {
-            generalEmbed
-                .setTitle('Footsteps')
-                .setDescription("Once per print! Footprints will be left by the ghost after it walks through salt that was placed on the ground or a pic of the salt pile the Ghost stepped in. Like fingerprints, UV light does not have to be shining on the footprints for the picture to count towards monetary rewards.** Having Footprints don't give the evidence Fingerprints!**")
-                .setImage('https://cdn.discordapp.com/attachments/937732109735452714/939456611477520384/unknown.png')
-                .setFooter({
-                    text: 'Get some feet pics for the onifans!'
-                });
         } else if (subcommand === 'ghost-photo') {
             generalEmbed
                 .setTitle('Ghost Picture')
-                .setDescription('A photo of the ghost physically manifesting, whether as part of a ghost event or during a hunt')
+                .setDescription('A photo of the ghost physically manifesting, whether as part of a ghost event, with D.O.T.S evidence or during a hunt')
                 .setImage('https://cdn.discordapp.com/attachments/923208644588359700/931976376372830239/unknown.png');
         } else if (subcommand === 'gtk') {
             generalEmbed
                 .setTitle('Good to know')
                 .setDescription('General information that will help finding the type of Ghost')
                 .addFields(
-                    { name: '**Evidence:**', value: "- Ghostwriting and D.O.T.S. **can now be evidence of the same Ghost.** \nIf you place the Ghost Writing book next to the DOTS Projector you will be able to notice if the ghost throws the book without writing in it. **This means ghost writing is NOT an evidence (excluding nightmare)!** \n- All Ghosts have 100% chance to leave Fingerprints (when it is an evidence) except the Obake and the Mimic mimicing an Obake (75% chance) \nFingerprints stay for 2 minutes (Obake has a chance to leave them for only 1 minute)"},
+                    { name: '**Evidence:**', value: "- Ghostwriting and D.O.T.S. **can now be evidence of the same Ghost.** \nIf you place the Ghost Writing book next to the DOTS Projector you will be able to notice if the ghost throws the book without writing in it. **This means ghost writing is NOT an evidence (excluding nightmare)!** \n- All Ghosts have 100% chance to leave ultraviolet and footprints (when it is an evidence) except the Obake and the Mimic mimicing an Obake (75% chance) \nUltraviolet evidence stay for 2 minutes (Obake has a chance to leave them for only 1 minute) \n- Freezing ghosts can lower the temperature to -10°C, non-freezing ghosts to 1°C"},
                     { name: '**General:**', value: "- If the ghost turns off the breaker, the lights will come back on when you turn the breaker on. \n- After a cursed Hunt all hunts will be longer and only has a grace period of 1 second, before it can kill you."}
                 );
         } else if (subcommand === 'interaction-photo') {
@@ -170,21 +156,21 @@ module.exports = {
                 .setDescription('Money reward given for all types of Pics. The Item placed the best in the Pic will count!')
                 .addFields(
                     { name: '**How it works:**', value: `You will get a set amount of money and XP per photo you take!`},
-                    { name: '**Rewards**', value: "**$5 - 3 star / $2 - 2 star / $1 - 1 star:** \nDead body (p.body), Interaction, Fingerprints, Footsteps, Cursed possessions (p.item), Salt pile stepped in, DOTS ghost, Ghost writing \n \n**$10 - 3 star / $5 - 2 star / $2 - 1 star** \nUsed crucifix, Dirty water (p.water), Bone (p.bone) \n \n**$20 - 3 star / $10 - 2 star / $5 - 1 star** \nGhost (p.ghost) "}
+                    { name: '**Rewards**', value: "**$5 - 3 star / $2 - 2 star / $1 - 1 star:** \nDead body (p.body), Interaction, Ultraviolet evidence, Cursed possessions (p.item), Salt pile stepped in, Ghost writing \n \n**$10 - 3 star / $5 - 2 star / $2 - 1 star** \nUsed crucifix, Dirty water (p.water), Bone (p.bone) \n \n**$20 - 3 star / $10 - 2 star / $5 - 1 star** \nGhost (p.ghost) "}
                 );
         } else if (subcommand === 'hunt-sanity') {
             generalEmbed
                 .setTitle('Hunt Sanity Percentage')
                 .setDescription('Each Ghost have a different range of Sanity when it can initiate a Hunt')
                 .addFields(
-                    { name: "**Hunt Percentage**", value: "**Yokai** 80% if someone is talking nearby \n**Demon** 70%, or any sanity (rare ability) \n**Onryo** 60% if there are no candles nearby \n**Mare** 60% if no lights are on, 40% when lights are on in the Ghost area \n**Raiju** 65% when there is electrical equipment around \n**Shade** 35% \n**Banshee** 50%, but will only check their targets sanity in multiplayer \n**Deogen** 40% \n**Thaye** 75%, lowers by 6% every time it ages \n**Not mentioned** 50%"},
+                    { name: "**Hunt Percentage**", value: "**Yokai** 80% if someone is talking nearby \n**Demon** 70%, or any sanity (rare ability) \n**Onryo** 60% if there are no firelights nearby \n**Mare** 60% if no lights are on, 40% when lights are on in the Ghost area \n**Raiju** 65% when there is electrical equipment around \n**Shade** 35% \n**Banshee** 50%, but will only check their targets sanity in multiplayer \n**Deogen** 40% \n**Thaye** 75%, lowers by 6% every time it ages \n**Not mentioned** 50%"},
                 );
         } else if (subcommand === 'smudging') {
             generalEmbed
                 .setTitle('Smudging')
-                .setDescription("Time range of how long Ghost get's prevent from Hunting by smudge Sticks")
+                .setDescription("Time range of how long Ghost get's prevent from Hunting by incence")
                 .addFields(
-                    { name: 'Time ranges', value: "- Every Ghost get stopped from hunting for 90s \n- Demon get stopped for 60s \n- Spirit will be stopped for 180s (3 minutes)"}
+                    { name: 'Time ranges', value: "- Every Ghost get stopped from hunting for 90s \n- Demon get stopped for 60s \n- Spirit will be stopped for 180s (3 minutes) \n- Moroi wanders aimlessly depending on the used tier (/incence) +50%"}
                 );
         } else if (subcommand === 'dirty-water-photo') {
             generalEmbed
@@ -194,6 +180,6 @@ module.exports = {
         };
 
         // response
-        interaction.reply({ embeds: [generalEmbed] });
+        interaction.editReply({ embeds: [generalEmbed] });
     }
-};
+}

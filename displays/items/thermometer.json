@@ -1,0 +1,6 @@
+{
+    "thermogen": "The use of the Thermometer chnages with the Tier that is used! If the Thermometer shows a value under 0°C it is evidence for Freezing temperature - seeing breath doesn't mean freezing temperature anymore!! \nTemperatures readings at or below 9°C or 45°F in Clear Skies weather, and below 6°C or 39.6°F in other types of weather, is generally an indication that the ghost is located within the room.",
+    "thermoT1": "A vintage wall thermometer, hold it in hand while moving through the house or drop it in the room the ghost might be in. \n-> medium accuracy, low sample speed",
+    "thermoT2": "-> unlocked at level 36 \nDigital infrared thermometer, much faster at reading temperatures. To use hold it in hand and hold the use button for about 5s till the scan is completed! \n-> high accuracy, medium sample speed, electronic",
+	"thermoT3": "-> unlocked at level 64 \nTo use hold it in hand and hold the use button till the scan is completed! It will give way faster results than the predecessors. \n-> high accuracy, high sample speed, electronic"
+}

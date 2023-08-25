@@ -1,0 +1,6 @@
+{
+    "flashlightgen": "A flashlight can be used as a source of light, hold it in hand and turn it on with primary use key (default: right click) or special use key (default: T) when it's in the inventory!",
+    "flashlightT1": "A retro flashlight which provides a small amount of light. \n-> narrow spotlight, low intensity, electronic",
+    "flashlightT2": "-> unlocked at level 19 \nA flashlight with a much brighter beam of light. \n-> narrow spotlight, medium intensity, electronic",
+	"flashlightT3": "-> unlocked at level 35 \nProjecting a wider and brighter cone of light. \n-> wide spotlight, high intensity, electronic"
+}

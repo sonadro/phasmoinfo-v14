@@ -25,7 +25,7 @@ module.exports = {
 
         const challengeNames = ['No Flashlight', 'Lockdown', 'Random Item ban', 'No evidence run', 'Random language', 'No radio', 'No talking', 'No hiding', 'Hardcore Lockdown', 'Only 3 items', 'Confusion run'];
 
-        const items = ['D.O.T.S. Projector', 'EMF Reader', 'Ghost Writing Book', 'Spirit Box', 'Thermometer', 'UV Light', 'Video Camera', 'Candle', 'Crucifix', 'Flashlight', 'Glowstick', 'Head Mounted Camera', 'Lighter', 'Motion Sensor', 'Parabolic Microphone', 'Photo Camera', 'Smudge Sticks', 'Salt', 'Sanity Pills', 'Sound Sensor', 'Tripod'];
+        const items = ['D.O.T.S. Projector', 'EMF Reader', 'Ghost Writing Book', 'Spirit Box', 'Thermometer', 'UV Light', 'Video Camera', 'firelight', 'Crucifix', 'Flashlight', 'Glowstick', 'Head gearCamera', 'Lighter', 'Motion Sensor', 'Parabolic Microphone', 'Photo Camera', 'Incence', 'Salt', 'Sanity medication', 'Sound Sensor', 'Tripod'];
 
         const languages = ['Portuguese', 'Spanish - Spain', 'Portuguese - Brazil', ' German', 'French', 'Italian', 'Bulgarian', 'Czech', 'Danish', 'Dutch', 'Finnish', 'Greek', 'Hungarian', 'Japanese', 'Korean', 'Norwegian', 'Polish', 'Romanian', 'Russian', 'Simplified Chinese', 'Swedish', 'Traditional Chinese', 'Turkish', 'Ukrainian'];
 
