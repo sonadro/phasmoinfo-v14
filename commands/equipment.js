@@ -16,7 +16,7 @@ const { firelightgen, firelightT1, firelightT2, firelightT3 } = require('../disp
 const { flashlightgen, flashlightT1,flashlightT2, flashlightT3 } = require('../displays/items/flashlight.json');
 const { headgen, headT1, headT2, headT3 } = require('../displays/items/head.json');
 const { ignitergen, igniterT1, igniterT2, igniterT3 } = require('../displays/items/igniter.json');
-const { incencegen, incenceT1, incenceT2, incenceT3 } = require('../displays/items/incence.json');
+const { incensegen, incenseT1, incenseT2, incenseT3 } = require('../displays/items/incense.json');
 const { motiongen, motionT1, motionT2, motionT3 } = require('../displays/items/motion.json');
 const { paramicgen, paramicT1, paramicT2, paramicT3 } = require('../displays/items/parabolic.json');
 const { photogen, photoT1, photoT2, photoT3 } = require('../displays/items/photocam.json');
@@ -284,19 +284,19 @@ module.exports = {
         )
     )
 
-    //incence
+    //incense
     .addSubcommand(subcommand =>
         subcommand
-        .setName('incence')
-        .setDescription('Shows information about the Incence.')
+        .setName('incense')
+        .setDescription('Shows information about the Incense.')
         .addStringOption(option =>
             option
             .setName('display')
             .setDescription('The info to display')
             .addChoices(
-                { name: 'Tier 1', value: 'incenceT1' },
-                { name: 'Tier 2', value: 'incenceT2' },
-                { name: 'Tier 3', value: 'incenceT3' },
+                { name: 'Tier 1', value: 'incenseT1' },
+                { name: 'Tier 2', value: 'incenseT2' },
+                { name: 'Tier 3', value: 'incenseT3' },
             )
         )
     )
@@ -382,16 +382,16 @@ module.exports = {
         // GET SUBCOMMAND -------
         if (interaction.options.getSubcommand() === 'dots') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'D.O.T.S projector';
+            const equipmentName = 'D.O.T.S projector';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: dotsgen },
                     { name: '**Tier 1:**', value: dotsT1 },
@@ -428,7 +428,7 @@ module.exports = {
                     { name: '**General:**', value: dotsgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -437,16 +437,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'emf-reader') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'EMF reader';
+            const equipmentName = 'EMF reader';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: emfgen },
                     { name: '**Tier 1:**', value: emfT1 },
@@ -483,7 +483,7 @@ module.exports = {
                     { name: '**General:**', value: emfgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
             
             // reply with embed
@@ -492,16 +492,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'writing-book') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Ghost writing book';
+            const equipmentName = 'Ghost writing book';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: bookgen },
                     { name: '**Tier 1:**', value: bookT1 },
@@ -538,7 +538,7 @@ module.exports = {
                     { name: '**General:**', value: bookgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -547,16 +547,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'spirit-box') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Spirit Box';
+            const equipmentName = 'Spirit Box';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: boxgen },
                     { name: '**Tier 1:**', value: boxT1 },
@@ -593,7 +593,7 @@ module.exports = {
                     { name: '**General:**', value: boxgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -602,16 +602,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'thermometer') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Thermometer';
+            const equipmentName = 'Thermometer';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: thermogen },
                     { name: '**Tier 1:**', value: thermoT1 },
@@ -648,7 +648,7 @@ module.exports = {
                     { name: '**General:**', value: thermogen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -657,16 +657,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'uv-light') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'UV light';
+            const equipmentName = 'UV light';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: uvgen },
                     { name: '**Tier 1:**', value: uvT1 },
@@ -703,7 +703,7 @@ module.exports = {
                     { name: '**General:**', value: uvgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -712,16 +712,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'video-camera') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Video camera';
+            const equipmentName = 'Video camera';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: videogen },
                     { name: '**Tier 1:**', value: videoT1 },
@@ -758,7 +758,7 @@ module.exports = {
                     { name: '**General:**', value: videogen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -767,16 +767,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'tripod') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Tripod';
+            const equipmentName = 'Tripod';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: tripodgen },
                     { name: '**Tier 1:**', value: tripodT1 },
@@ -813,7 +813,7 @@ module.exports = {
                     { name: '**General:**', value: tripodgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -822,16 +822,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'sound') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Sound sensor';
+            const equipmentName = 'Sound sensor';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: soundgen },
                     { name: '**Tier 1:**', value: soundT1 },
@@ -867,7 +867,7 @@ module.exports = {
                     { name: '**General:**', value: soundgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -876,16 +876,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'medication') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Sanity medication';
+            const equipmentName = 'Sanity medication';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: pillsgen },
                     { name: '**Tier 1:**', value: pillsT1 },
@@ -922,7 +922,7 @@ module.exports = {
                     { name: '**General:**', value: pillsgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
             
             // reply with embed
@@ -931,16 +931,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'crucifix') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Crucifix';
+            const equipmentName = 'Crucifix';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: crucifixgen },
                     { name: '**Tier 1:**', value: crucifixT1 },
@@ -977,7 +977,7 @@ module.exports = {
                     { name: '**General:**', value: crucifixgen},
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
             
             // reply with embed
@@ -986,16 +986,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'firelight') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Firelight';
+            const equipmentName = 'Firelight';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: firelightgen },
                     { name: '**Tier 1:**', value: firelightT1 },
@@ -1032,7 +1032,7 @@ module.exports = {
                     { name: '**General:**', value: firelightgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
             
             // reply with embed
@@ -1041,16 +1041,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'flashlight') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Flashlight';
+            const equipmentName = 'Flashlight';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: flashlightgen },
                     { name: '**Tier 1:**', value: flashlightT1 },
@@ -1087,7 +1087,7 @@ module.exports = {
                     { name: '**General:**', value: flashlightgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
             
             // reply with embed
@@ -1096,16 +1096,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'head-gear') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Head gear';
+            const equipmentName = 'Head gear';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: headgen },
                     { name: '**Tier 1:**', value: headT1 },
@@ -1142,7 +1142,7 @@ module.exports = {
                     { name: '**General:**', value: headgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -1151,16 +1151,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'igniter') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Igniter';
+            const equipmentName = 'Igniter';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: ignitergen },
                     { name: '**Tier 1:**', value: igniterT1 },
@@ -1197,30 +1197,30 @@ module.exports = {
                     { name: '**General:**', value: ignitergen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
             await interaction.editReply({ embeds: [ghostEmbed] });
 
         // NEXT ----------------------------------------------------------
-        } else if (interaction.options.getSubcommand() === 'incence') {
+        } else if (interaction.options.getSubcommand() === 'incense') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Incence';
+            const equipmentName = 'Incense';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
-                    { name: '**General:**', value: incencegen },
-                    { name: '**Tier 1:**', value: incenceT1 },
-                    { name: '**Tier 2:**', value: incenceT2 },
-                    { name: '**Tier 3:**', value: incenceT3 }
+                    { name: '**General:**', value: incensegen },
+                    { name: '**Tier 1:**', value: incenseT1 },
+                    { name: '**Tier 2:**', value: incenseT2 },
+                    { name: '**Tier 3:**', value: incenseT3 }
                 )
             } else {
                 // if specifics are displayed, change values to reply with
@@ -1229,30 +1229,30 @@ module.exports = {
                 let descriptionValue;
 
                 switch(option) {
-                    case 'incenceT1':
+                    case 'incenseT1':
                         title = '**Tier 1:**';
-                        displayValue = incenceT1;
-                        descriptionValue = 'incenceT1';
+                        displayValue = incenseT1;
+                        descriptionValue = 'incenseT1';
                         break;
-                    case 'incenceT2':
+                    case 'incenseT2':
                         title = '**Tier 2:**';
-                        displayValue = incenceT2;
-                        descriptionValue = 'incenceT2';
+                        displayValue = incenseT2;
+                        descriptionValue = 'incenseT2';
                         break;
-                    case 'incenceT3':
+                    case 'incenseT3':
                         title = '**Tier 3:**';
-                        displayValue = incenceT3;
-                        descriptionValue = 'incenceT3';
+                        displayValue = incenseT3;
+                        descriptionValue = 'incenseT3';
                         break;
                 }
 
                 // update the embed
                 ghostEmbed
                 .addFields(
-                    { name: '**General:**', value: incencegen },
+                    { name: '**General:**', value: incensegen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
             
             // reply with embed
@@ -1261,16 +1261,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'motion-sensor') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Motion sensor';
+            const equipmentName = 'Motion sensor';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: motiongen },
                     { name: '**Tier 1:**', value: motionT1 },
@@ -1307,7 +1307,7 @@ module.exports = {
                     { name: '**General:**', value: motiongen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -1316,16 +1316,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'parabolic') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Parabolic microphone';
+            const equipmentName = 'Parabolic microphone';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: paramicgen },
                     { name: '**Tier 1:**', value: paramicT1 },
@@ -1362,7 +1362,7 @@ module.exports = {
                     { name: '**General:**', value: paramicgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
@@ -1371,16 +1371,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'photo-camera') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Photo camera';
+            const equipmentName = 'Photo camera';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: photogen },
                     { name: '**Tier 1:**', value: photoT1 },
@@ -1417,7 +1417,7 @@ module.exports = {
                     { name: '**General:**', value: photogen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
             
             // reply with embed
@@ -1426,16 +1426,16 @@ module.exports = {
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'salt') {
             const option = interaction.options.getString('display') ?? 'all';
-            const ghostName = 'Salt';
+            const equipmentName = 'Salt';
 
             // set embed title
-            ghostEmbed.setTitle(ghostName);
+            ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
             if (option === 'all') {
                 // update embed
                 ghostEmbed
-                .setDescription(`All information about ${ghostName}!`)
+                .setDescription(`All information about ${equipmentName}!`)
                 .addFields(
                     { name: '**General:**', value: saltgen },
                     { name: '**Tier 1:**', value: saltT1 },
@@ -1472,7 +1472,7 @@ module.exports = {
                     { name: '**General:**', value: saltgen },
                     { name: title, value: displayValue }
                 )
-                .setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
             }
 
             // reply with embed
