@@ -96,7 +96,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '16', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025052341700927498/unknown.png');
+                    .setImage('https://i.imgur.com/rhYpKXc.png');
             } else if (subcommand === 'maple-lodge-campsite') {
                 mapEmbed
                     .setTitle('Maple Lodge Campsite')
@@ -104,7 +104,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '25', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025054732894609408/unknown.png');
+                    .setImage('https://i.imgur.com/XXzfdG7.png');
             } else if (subcommand === 'edgefield') {
                 mapEmbed
                     .setTitle('42 Edgefield Road')
@@ -112,7 +112,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '16', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025053421335756820/unknown.png');
+                    .setImage('https://i.imgur.com/u1JoZES.png');
             } else if (subcommand === 'grafton') {
                 mapEmbed
                     .setTitle('Grafton Farmhouse')
@@ -120,7 +120,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '13', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025054141560655952/unknown.png');
+                    .setImage('https://i.imgur.com/01orZBD.png');
             } else if (subcommand === 'high-school') {
                 mapEmbed
                     .setTitle('Brownstone High School')
@@ -128,7 +128,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '58', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025052513973571696/unknown.png');
+                    .setImage('https://i.imgur.com/75yb4O5.png');
             } else if (subcommand === 'prison') {
                 mapEmbed
                     .setTitle('Prison')
@@ -136,7 +136,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '29', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025054867951198298/unknown.png');
+                    .setImage('https://i.imgur.com/VM7Q1a0.png');
             } else if (subcommand === 'restricted-meadows') {
                 mapEmbed
                     .setTitle('Sunny Meadows Mental Institution - RESTRICTED')
@@ -144,7 +144,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Large', inline: true},
                         { name: '**Rooms:** ', value: '69', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025056707229007912/unknown.png');
+                    .setImage('https://i.imgur.com/cyn4pmb.png');
             } else if (subcommand === 'ridgeview') {
                 mapEmbed
                     .setTitle('10 Ridgeview Court')
@@ -152,7 +152,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '16', inline: true}
                     )
-                    .setImage('https://i.imgur.com/LaHeWDx.png');
+                    .setImage('https://i.imgur.com/MAYVQH7.png');
             } else if (subcommand === 'sunny-meadows') {
                 mapEmbed
                     .setTitle('Sunny Meadows Mental Institution')
@@ -160,7 +160,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Large', inline: true},
                         { name: '**Rooms:** ', value: '69', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025050444373958666/unknown.png');
+                    .setImage('https://i.imgur.com/9FKzDIH.png');
             } else if (subcommand === 'tanglewood') {
                 mapEmbed
                     .setTitle('6 Tanglewood Drive')
@@ -168,7 +168,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '11', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025055440289144832/unknown.png');
+                    .setImage('https://i.imgur.com/EJM7tBR.png');
             } else if (subcommand === 'willow') {
                 mapEmbed
                     .setTitle('13 Willow Street')
@@ -176,7 +176,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '10', inline: true}
                     )
-                    .setImage('https://cdn.discordapp.com/attachments/945359310458859560/1025055741012353034/unknown.png');
+                    .setImage('https://i.imgur.com/EJM7tBR.png');
             } else if (subcommand === 'camp-woodwind') {
                 mapEmbed
                     .setTitle('Camp Woodwind')
@@ -184,7 +184,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '11', inline: true}
                     )
-                    .setImage('https://i.imgur.com/wzRfJAb.png');
+                    .setImage('https://i.imgur.com/x7kEyM3.png');
             };
 
             // respond
