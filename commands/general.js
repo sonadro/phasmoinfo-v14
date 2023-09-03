@@ -118,7 +118,7 @@ module.exports = {
                 .setTitle('Sanity drain')
                 .setDescription('Your sanity will drain depending on Light and Ghostevents')
                 .addFields(
-                    { name: "**Drain Percentage**", value: "At 100% Saity drain settings: **Solo Large Map** 3%, **Small Map** 7,2% per Minute \n**Multiplayer Large Map** 6%, **Small Map** 14,4% per Minute \n **With Firelight in Hand** depening on the Tier (/firelight) \n**Standing in light** depending on how much light you are exposed to \n**Ghost Event** 10% (except Oni and Banshee singing Ghost event) \n**Ghost reveal/hunt and Ghost within 10m** 0,2% per Second"},
+                    { name: "**Drain Percentage**", value: "At Professional settings (200% drain speed): **Solo Large Map** 3%, **Small Map** 7,2% per Minute \n**Multiplayer Large Map** 6%, **Small Map** 14,4% per Minute \n **With Firelight in Hand** depening on the Tier (/firelight) \n**Standing in light** depending on how much light you are exposed to \n**Ghost Event** 10% (except Oni and Banshee singing Ghost event) \n**Ghost reveal/hunt and Ghost within 10m** 0,2% per Second"},
                 );
         } else if (subcommand === 'ultraviolet') {
             generalEmbed
