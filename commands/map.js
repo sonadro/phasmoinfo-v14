@@ -96,7 +96,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '16', inline: true}
                     )
-                    .setImage('https://i.imgur.com/tsFGE2r.png');
+                    .setImage('https://i.imgur.com/rhYpKXc.png');
             } else if (subcommand === 'maple-lodge-campsite') {
                 mapEmbed
                     .setTitle('Maple Lodge Campsite')
@@ -104,7 +104,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '25', inline: true}
                     )
-                    .setImage('https://i.imgur.com/XXzfdG7.png');
+                    .setImage('https://i.imgur.com/tsFGE2r.png');
             } else if (subcommand === 'edgefield') {
                 mapEmbed
                     .setTitle('42 Edgefield Road')
