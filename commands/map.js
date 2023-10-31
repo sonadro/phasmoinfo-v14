@@ -96,7 +96,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '16', inline: true}
                     )
-                    .setImage('https://i.imgur.com/rhYpKXc.png');
+                    .setImage('https://i.imgur.com/tsFGE2r.png');
             } else if (subcommand === 'maple-lodge-campsite') {
                 mapEmbed
                     .setTitle('Maple Lodge Campsite')
