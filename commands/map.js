@@ -104,7 +104,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '25', inline: true}
                     )
-                    .setImage('https://i.imgur.com/tsFGE2r.png');
+                    .setImage('https://i.imgur.com/jNJ79IG.png');
             } else if (subcommand === 'edgefield') {
                 mapEmbed
                     .setTitle('42 Edgefield Road')
