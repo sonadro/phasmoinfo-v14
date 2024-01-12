@@ -53,9 +53,9 @@ if (local == 'false') {
     const token = process.env['TOKEN'];
     const keepAlive = require(__dirname + '/server.js');
 
-    // replit dis uniter
+    /* replit dis uniter
     const disUniter = require('replit-dis-uniter');
-    disUniter(client);
+    disUniter(client); */
 
     // replit start
     keepAlive();
