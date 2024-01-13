@@ -51,14 +51,16 @@ for (const file of eventFiles) {
 if (local == 'false') {
     // replit variables
     const token = process.env['TOKEN'];
-    const keepAlive = require(__dirname + '/server.js');
+    //const keepAlive = require(__dirname + '/server.js');
 
     /* replit dis uniter
     const disUniter = require('replit-dis-uniter');
     disUniter(client); */
 
     // replit start
-    keepAlive();
+    //keepAlive()
+    const http = require("http");
+    http.createServer((_, res) => res.end("Alive")).listen(8080)
     client.login(token);
 } else {
     // LOCAL START
