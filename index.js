@@ -53,9 +53,20 @@ if (local == 'false') {
     const token = process.env['TOKEN'];
     //Website
     const http = require("http")
+    const html_path = require('path')
     http.createServer(function (req, res) {
-        res.write('Hello World!');
-        res.end();
+    // Check if the request is for the index.html
+    if (req.url === '/' || req.url === '/index.html') {
+        fs.readFile(html_path.join(__dirname, 'index.html'), function(err, data) {
+        if (err) {
+            res.writeHead(500); // Internal Server Error
+            res.end('Error loading index.html');
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.end(data)
+        }
+        });
+    }
     }).listen(8080);
     //login
     client.login(token);
