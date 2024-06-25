@@ -141,8 +141,8 @@ module.exports = {
                 mapEmbed
                     .setTitle('Sunny Meadows Mental Institution - RESTRICTED')
                     .addFields(
-                        { name: '**Size:** ', value: 'Large', inline: true},
-                        { name: '**Rooms:** ', value: '69', inline: true}
+                        { name: '**Size:** ', value: 'Medium', inline: true},
+                        { name: '**Rooms:** ', value: '>17', inline: true}
                     )
                     .setImage('https://i.imgur.com/cyn4pmb.png');
             } else if (subcommand === 'ridgeview') {

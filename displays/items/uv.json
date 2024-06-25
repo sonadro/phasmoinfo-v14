@@ -1,6 +1,6 @@
 {
     "uvgen": "Some types of Ghosts will leave Fingerprints on doors, light switches, and windows and  leave Footsteps after walking though salt. To take pictures of fingerprints or footprints they need to be charged by the UV light, pictures will only count while they're visible!",
-    "uvT1": "A glowstick that grants area light that slowly fades over time. Once the light has dulled, give it another shake using primay use button to replenish some light! \n-> 60s duration, 10s UV charge time, area light",
-    "uvT2": "-> unlocked at level 21 \nA UV flashlight that has a long-distance narrow beam of light. It will charge Finger- and footprints way faster! \n-> 5s UV charge time, narrow spotlight, electronic",
+    "uvT1": "-> unlocked at level 21 \nA UV flashlight that has a long-distance narrow beam of light. It will charge Finger- and footprints way faster! \n-> 5s UV charge time, narrow spotlight, electronic",
+    "uvT2": "A glowstick that grants area light that slowly fades over time. Once the light has dulled, give it another shake using primay use button to replenish some light! \n-> 60s duration, 10s UV charge time, area light",
 	"uvT3": "-> unlocked at level 56 \nHas a much wider output and is way brighter. Charges finger- and footprints very fast and reveals UV evidence from higher distance! \n-> 1,5s UV charge time, wide spotlight, electronic"
 }
