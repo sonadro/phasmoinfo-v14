@@ -142,7 +142,7 @@ module.exports = {
                     .setTitle('Sunny Meadows Mental Institution - RESTRICTED')
                     .addFields(
                         { name: '**Size:** ', value: 'Medium', inline: true},
-                        { name: '**Rooms:** ', value: '>17', inline: true}
+                        { name: '**Rooms:** ', value: '> 17', inline: true}
                     )
                     .setImage('https://i.imgur.com/cyn4pmb.png');
             } else if (subcommand === 'ridgeview') {
@@ -185,6 +185,15 @@ module.exports = {
                         { name: '**Rooms:** ', value: '11', inline: true}
                     )
                     .setImage('https://i.imgur.com/x7kEyM3.png');
+            } else if (subcommand === 'point-hope') {
+                mapEmbed
+                    .setTitle('Point Hope')
+                    .addFields(
+                        { name: '**Size:** ', value: '-', inline: true},
+                        { name: '**Rooms:** ', value: '12', inline: true},
+                        { name: '**There is no image for this map yet** ', value: 'We will add it as soon as possible!', inline: true}
+                    )
+                    //.setImage('https://i.imgur.com/x7kEyM3.png');
             };
 
             // respond

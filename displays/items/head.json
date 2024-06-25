@@ -1,5 +1,5 @@
 {
-    "headgen": "Head gear can be used as had camera, flashlight or night vision goggles, depending on the Tier. Picking it up in the truck will automatically place it on the Head slot of the player without using an inventory slot.\nHead gear counts as electronics now! it has to be turned on and off by holding the special use key (default: T) for a few seconds.",
+    "headgen": "Head gear can be used as had camera, flashlight or night vision goggles, depending on the Tier. Picking it up in the truck will automatically place it on the Head slot of the player without using an inventory slot.\nHead gear counts as electronics! it has to be turned on and off with head gear toggle (default: Hold T).",
     "headT1": "-> unlocked at level 13 \nA small camera, allows your teammates to watch live video feed of your view from the truck. \n-> head slot, medium image quality, medium paranormal interference, electronic",
     "headT2": "-> unlocked at level 49 \nA small haed-mounted flashlight. Only downside is that the light isn't overly bright or wide. \n-> head slot, low intensity, narrow spotlight, electronic",
 	"headT3": "-> unlocked at level 82 \nNight vision goggles, allowing you to see without the need of a flashlight. Your vision gets distorted if with an active ghost. \n-> head slot, night vision, medium paranormal interference, electronic"
