@@ -75,7 +75,13 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('camp-woodwind')
-                .setDescription('Information about camp woodwind')),
+                .setDescription('Information about camp woodwind'))
+
+        // point hope
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('point-hope')
+                .setDescription('Information about point hope')),
 
         // execute command
         async execute(interaction) {
