@@ -196,7 +196,8 @@ module.exports = {
                     { name: 'Prison', value: 'Command: /prison', inline: true},
                     { name: 'Sunny Meadows Mental Institution', value: 'Command: /sunny-meadows', inline: true},
                     { name: 'Sunny Meadows Mental Institution - RESTRICTED', value: 'Command: /restricted-meadows', inline: true},
-                    { name: 'Camp Woodwind', value: 'Command: /camp-woodwind', inline: true}
+                    { name: 'Camp Woodwind', value: 'Command: /camp-woodwind', inline: true},
+                    { name: 'Point Hope', value: 'Command: /point-hope', inline: true}
                 )
                 .setFooter({
                     text: 'Boooo!',
