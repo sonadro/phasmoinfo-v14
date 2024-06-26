@@ -102,7 +102,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '16', inline: true}
                     )
-                    .setImage('https://i.imgur.com/rhYpKXc.png');
+                    .setImage('https://i.imgur.com/Ij0YEGX.png');
             } else if (subcommand === 'maple-lodge-campsite') {
                 mapEmbed
                     .setTitle('Maple Lodge Campsite')
@@ -110,7 +110,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '25', inline: true}
                     )
-                    .setImage('https://i.imgur.com/jNJ79IG.png');
+                    .setImage('https://i.imgur.com/vCA4Kzm.png');
             } else if (subcommand === 'edgefield') {
                 mapEmbed
                     .setTitle('42 Edgefield Road')
@@ -118,7 +118,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '16', inline: true}
                     )
-                    .setImage('https://i.imgur.com/u1JoZES.png');
+                    .setImage('https://i.imgur.com/yISiSIS.png');
             } else if (subcommand === 'grafton') {
                 mapEmbed
                     .setTitle('Grafton Farmhouse')
@@ -126,7 +126,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '13', inline: true}
                     )
-                    .setImage('https://i.imgur.com/01orZBD.png');
+                    .setImage('https://i.imgur.com/vGfqalT.png');
             } else if (subcommand === 'high-school') {
                 mapEmbed
                     .setTitle('Brownstone High School')
@@ -134,7 +134,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '58', inline: true}
                     )
-                    .setImage('https://i.imgur.com/75yb4O5.png');
+                    .setImage('https://i.imgur.com/kvEgctD.png');
             } else if (subcommand === 'prison') {
                 mapEmbed
                     .setTitle('Prison')
@@ -142,7 +142,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '29', inline: true}
                     )
-                    .setImage('https://i.imgur.com/VM7Q1a0.png');
+                    .setImage('https://i.imgur.com/q0doTXo.png');
             } else if (subcommand === 'restricted-meadows') {
                 mapEmbed
                     .setTitle('Sunny Meadows Mental Institution - RESTRICTED')
@@ -158,7 +158,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '16', inline: true}
                     )
-                    .setImage('https://i.imgur.com/MAYVQH7.png');
+                    .setImage('https://i.imgur.com/fcQEVsv.png');
             } else if (subcommand === 'sunny-meadows') {
                 mapEmbed
                     .setTitle('Sunny Meadows Mental Institution')
@@ -166,7 +166,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Large', inline: true},
                         { name: '**Rooms:** ', value: '69', inline: true}
                     )
-                    .setImage('https://i.imgur.com/9FKzDIH.png');
+                    .setImage('https://i.imgur.com/o4RlLfu.png');
             } else if (subcommand === 'tanglewood') {
                 mapEmbed
                     .setTitle('6 Tanglewood Drive')
@@ -174,7 +174,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '11', inline: true}
                     )
-                    .setImage('https://i.imgur.com/EJM7tBR.png');
+                    .setImage('https://i.imgur.com/66UE6pL.png');
             } else if (subcommand === 'willow') {
                 mapEmbed
                     .setTitle('13 Willow Street')
@@ -182,7 +182,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '10', inline: true}
                     )
-                    .setImage('https://i.imgur.com/EJM7tBR.png');
+                    .setImage('https://i.imgur.com/mtlgVFE.png');
             } else if (subcommand === 'camp-woodwind') {
                 mapEmbed
                     .setTitle('Camp Woodwind')
@@ -190,16 +190,15 @@ module.exports = {
                         { name: '**Size:** ', value: 'Small', inline: true},
                         { name: '**Rooms:** ', value: '11', inline: true}
                     )
-                    .setImage('https://i.imgur.com/x7kEyM3.png');
+                    .setImage('https://i.imgur.com/x9xYfaC.png');
             } else if (subcommand === 'point-hope') {
                 mapEmbed
                     .setTitle('Point Hope')
                     .addFields(
-                        { name: '**Size:** ', value: '-', inline: true},
-                        { name: '**Rooms:** ', value: '12', inline: true},
-                        { name: '**There is no image for this map yet** ', value: 'We will add it as soon as possible!', inline: true}
+                        { name: '**Size:** ', value: 'Small', inline: true},
+                        { name: '**Rooms:** ', value: '12', inline: true}
                     )
-                    //.setImage('https://i.imgur.com/x7kEyM3.png');
+                    .setImage('https://i.imgur.com/2t73s51.png');
             };
 
             // respond
