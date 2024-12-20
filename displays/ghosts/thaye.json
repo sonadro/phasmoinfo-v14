@@ -1,5 +1,5 @@
 {
     "thaEvi": "Ghost Orb \nGhost Writing \nD.O.T.S. Projector",
-    "thaTra": "Increased chance for D.O.T.S. and Ghost Writing evidence. \n \nEvery 1-2 minutes, the Thaye will attempt to age. It will **succeed if any player is in the same room as the ghost.**\n\nCan Hunt at 75% Sanity, lowers by 6% every time it ages. Does not speed up over time in LoS.",
+    "thaTra": "Every 1-2 minutes, the Thaye will attempt to age. It will **succeed if any player is in the same room as the ghost.**\n\nCan Hunt at 75% Sanity, lowers by 6% every time it ages. Does not speed up over time in LoS.",
     "thaAbi": "Starting statistics for Thaye: \nInteractions & events: 200% \nGhost speed: 2.75 m/s \n \nEach time the Thaye ages, it will lower these statistics: \nHunt threshold lowers by 6% \n-15% chance for events & interactions\n-0.175 m/s ghost speed. \n \nThe Thaye can age a total of 10 times."
 }
