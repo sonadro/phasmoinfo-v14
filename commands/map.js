@@ -198,7 +198,7 @@ module.exports = {
                         { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '12', inline: true}
                     )
-                    .setImage('https://i.imgur.com/2t73s51.png');
+                    .setImage('https://i.imgur.com/cokEgMe.png');
             };
 
             // respond
