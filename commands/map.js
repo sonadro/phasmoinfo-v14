@@ -99,10 +99,10 @@ module.exports = {
                 mapEmbed
                     .setTitle('Bleasdale Farmhouse')
                     .addFields(
-                        { name: '**Size:** ', value: 'Small', inline: true},
-                        { name: '**Rooms:** ', value: '16', inline: true}
+                        { name: '**Size:** ', value: 'Medium', inline: true},
+                        { name: '**Rooms:** ', value: '20', inline: true}
                     )
-                    .setImage('https://i.imgur.com/Ij0YEGX.png');
+                    .setImage('https://i.imgur.com/N6q04Cx.png');
             } else if (subcommand === 'maple-lodge-campsite') {
                 mapEmbed
                     .setTitle('Maple Lodge Campsite')
@@ -195,7 +195,7 @@ module.exports = {
                 mapEmbed
                     .setTitle('Point Hope')
                     .addFields(
-                        { name: '**Size:** ', value: 'Small', inline: true},
+                        { name: '**Size:** ', value: 'Medium', inline: true},
                         { name: '**Rooms:** ', value: '12', inline: true}
                     )
                     .setImage('https://i.imgur.com/2t73s51.png');
