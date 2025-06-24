@@ -62,8 +62,8 @@ module.exports = {
     // photo rewards
     .addSubcommand(subcommand =>
         subcommand
-            .setName('photo-rewards')
-            .setDescription('What you should know about taking photos in general'))
+            .setName('media')
+            .setDescription('What you should know about recording media and the rewards'))
 
     // sanity
     .addSubcommand(subcommand =>
@@ -81,7 +81,19 @@ module.exports = {
     .addSubcommand(subcommand =>
         subcommand
             .setName('dirty-water-photo')
-            .setDescription('What you should know about taking dirty water photos')),
+            .setDescription('What you should know about taking dirty water photos'))
+
+        // record sounds
+    .addSubcommand(subcommand =>
+        subcommand
+            .setName('record-sounds')
+            .setDescription('What you should know about recording sounds'))
+
+    // Video evidence
+    .addSubcommand(subcommand =>
+        subcommand
+            .setName('video')
+            .setDescription('What you should know about capturing videos')),
 
     // execute command
     async execute(interaction) {
@@ -130,7 +142,7 @@ module.exports = {
         } else if (subcommand === 'ghost-photo') {
             generalEmbed
                 .setTitle('Ghost Picture')
-                .setDescription('A photo of the ghost physically manifesting, whether as part of a ghost event, with D.O.T.S evidence or during a hunt')
+                .setDescription("A photo can't only be taken with a photo camera, but also be recorded with a video camera. Each ghost form can be an individual piece of media, meaning you can record it being in it's physical form, shadow form or as a D.O.T.S ghost!")
                 .setImage('https://cdn.discordapp.com/attachments/923208644588359700/931976376372830239/unknown.png');
         } else if (subcommand === 'gtk') {
             generalEmbed
@@ -143,20 +155,20 @@ module.exports = {
         } else if (subcommand === 'interaction-photo') {
             generalEmbed
                 .setTitle('Interactions')
-                .setDescription('Once per interaction! Most ghost activities count as interactions, such as a thrown object. A burned Crucifix or Ghost Writing will count as an interaction when Pic is taken while the Ghost interacts with it.')
+                .setDescription('Interactions of ghosts can be recorded with the video camera for a reward. Including thrown objects, burning crucifix, moving doors and the ghost interacting with objects. Some interactions can also be captured as a picture, eg. burned crucifix, ghost writing or EMF reading on the EMF reader.')
                 .setImage('https://cdn.discordapp.com/attachments/923208644588359700/931571739455029278/unknown.png');
         } else if (subcommand === 'posession-photo') {
             generalEmbed
                 .setTitle('Cursed Posession Picture')
                 .setDescription('Once per contract and Object! Can be take before or after use. You can not take a picture of a broken Ouija Board!')
                 .setImage('https://media.discordapp.net/attachments/937732109735452714/938121419403968542/unknown.png');
-        } else if (subcommand === 'photo-rewards') {
+        } else if (subcommand === 'media') {
             generalEmbed
-                .setTitle('Photo Rewards')
-                .setDescription('Money reward given for all types of Pics. The Item placed the best in the Pic will count!')
+                .setTitle('Media')
+                .setDescription('Money reward given for all types of Media. If equipment with higher Tier is used, a higher reward will be given! Duplicates count through all kinds of media! Up to 3 medias can be deleted.\n Media rewards are included in the difficulty multiplier!')
                 .addFields(
-                    { name: '**How it works:**', value: `You will get a set amount of money and XP per photo you take!`},
-                    { name: '**Rewards**', value: "**$5 - 3 star / $2 - 2 star / $1 - 1 star:** \nDead body (p.body), Interaction, Ultraviolet evidence, Cursed possessions (p.item), Salt pile stepped in, Ghost writing \n \n**$10 - 3 star / $5 - 2 star / $2 - 1 star** \nUsed crucifix, Dirty water (p.water), Bone (p.bone) \n \n**$20 - 3 star / $10 - 2 star / $5 - 1 star** \nGhost (p.ghost) "}
+                    { name: '**How it works:**', value: `Every piece of media you collect will either be unique or duplicated, rewarding 3$ or 1$`},
+                    { name: '**Equipment rewards**', value: "Tier 1 equipment won't give a bonus, Tier 2 gives 1$ per media and Tier 3 2$ per media."}
                 );
         } else if (subcommand === 'hunt-sanity') {
             generalEmbed
@@ -172,6 +184,14 @@ module.exports = {
                 .addFields(
                     { name: 'Time ranges', value: "- Every Ghost get stopped from hunting for 90s \n- Demon get stopped for 60s \n- Spirit will be stopped for 180s (3 minutes) \n- Moroi wanders aimlessly depending on the used tier (/incence) +50%"}
                 );
+        } else if (subcommand === 'video') {
+            generalEmbed
+                .setTitle('Taking videos')
+                .setDescription("A total of five videos can be captured in an investigation. If there is something, that can be recorded, a rectangle will show up on teh screen of the camera. To record hold down the 'use' Button (Default: right click) till it's over. The rectangle will stay a bit longer than the recordable interaction is.\n Videos can also be recorded from the CCTV-Monitor in the Truck.");
+        } else if (subcommand === 'record-sounds') {
+            generalEmbed
+                .setTitle('Record sounds')
+                .setDescription("Up to 3 sounds can be recorded per contarct. If there is a recordable sound nearby, the soundrecorder will show an indicator for it.  To record a sound hold the soundrecorder (/soundrecorder) in your hand and hold 'use' (Defaukt: right click) till the sound indication vanishes. The sounds can be played back from the sounds page in the journal.");
         } else if (subcommand === 'dirty-water-photo') {
             generalEmbed
                 .setTitle('Dirty Water Photo')

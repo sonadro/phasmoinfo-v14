@@ -1,6 +1,6 @@
 {
-    "videogen": "Video Cameras can be used to find ghost orbs and observe the ghost room. Hold it in hand will autmatically turn it on, primary use (default: right click) activates nightvision. They can be placed on the floor with secundary action, where the ghost can throw them, or on a tripod (/tripod)! \nCameras with nightvision can help see the silhouette of D.O.T.S evidence!",
+    "videogen": "Video Cameras can be used to find ghost orbs, observe the ghost room and make videos. Hold it in hand will autmatically turn it on, primary use (default: right click) activates nightvision, holding rimary use when an indicator is shown will record a video (/video). They can be placed on the floor with secundary action, where the ghost can throw them, or on a tripod (/tripod)! \nCameras with nightvision can help see the silhouette of D.O.T.S evidence!",
     "videoT1": "An old vintage camcorder with a small display. \n-> low image quality, high paranormal interference, high knockdown chance, electronic",
-    "videoT2": "-> unlocked at level 33 \nA video camera with a higher quality screen and more resistence against paranormal interference. \n-> medium image quality, medium paranormal interference, high knockdown chnace, electronic",
-	"videoT3": "-> unlocked at level 61 \nA large cinema-grade camera with way better quality \n-> high image quality, low paranormal interference, high knockdown chnace, elerctronic "
+    "videoT2": "-> unlocked at level 33 \nA video camera with a higher quality screen and more resistence against paranormal interference. It will give an additional bonus of 1$ per photo! \n-> medium image quality, medium paranormal interference, high knockdown chnace, electronic",
+	"videoT3": "-> unlocked at level 61 \nA large cinema-grade camera with way better quality. It will give an additional bonus of 2$ per photo! \n-> high image quality, low paranormal interference, high knockdown chnace, elerctronic "
 }

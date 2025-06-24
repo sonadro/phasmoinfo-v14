@@ -1,0 +1,6 @@
+{
+    "soundrecgen": "Hold in your hand and press primary use (Default: right click) to turn on. Soundrecorder Tier 2 or better will show an indicator if an recordable sound is nearby. To record hold primary use till the indicator goes away. Succesfully recordings will reward extra money at the end of a contract! Recorded sounds can be replayed from the journal.",
+    "soundrecT1": "-> unlocked at level 4 \nOld, banged up and taped together. This old Paracord Sound Recorder has seen much better days, thankfully it still works... \n-> 3m range, electronic",
+    "soundrecT2": "-> unlocked at level 39 \nGhost Huntin' Distribution's very own brand of Sound Recorder. It's more efficient than it's predessor, the digital screen and new interface makes for an easier time hunting those spooky sounds.\n-> 5m range, display screen, electronic",
+	"soundrecT3": "-> unlocked at level 60 \nBONY's latest in sound recording hardware. This device is equipped with several features to make hunting sounds as easy as can be. The dual microphone setup makes for much easier tracking, and quick recordings, even those that are barely audible. \n-> 5m range, display screen, distance indicator, directional indicator, electronic"
+}

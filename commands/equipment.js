@@ -21,6 +21,7 @@ const { motiongen, motionT1, motionT2, motionT3 } = require('../displays/items/m
 const { paramicgen, paramicT1, paramicT2, paramicT3 } = require('../displays/items/parabolic.json');
 const { photogen, photoT1, photoT2, photoT3 } = require('../displays/items/photocam.json');
 const { saltgen, saltT1, saltT2, saltT3 } = require('../displays/items/salt.json');
+const { soundrecgen, soundrecT1, soundrecT2, soundrecT3 } = require('../displays/items/soundrec.json');
 
 // command
 module.exports = {
@@ -59,6 +60,23 @@ module.exports = {
                 { name: 'Tier 1', value: 'emfT1' },
                 { name: 'Tier 2', value: 'emfT2' },
                 { name: 'Tier 3', value: 'emfT3' },
+            )
+        )
+    )
+
+    //soundrecorder
+    .addSubcommand(subcommand =>
+        subcommand
+        .setName('sound-recorder')
+        .setDescription('Shows information about the soundrecorder.')
+        .addStringOption(option =>
+            option
+            .setName('display')
+            .setDescription('The info to display')
+            .addChoices(
+                { name: 'Tier 1', value: 'soundrecT1' },
+                { name: 'Tier 2', value: 'soundrecT2' },
+                { name: 'Tier 3', value: 'soundrecT3' },
             )
         )
     )
@@ -481,6 +499,61 @@ module.exports = {
                 ghostEmbed
                 .addFields(
                     { name: '**General:**', value: emfgen },
+                    { name: title, value: displayValue }
+                )
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
+            }
+            
+            // reply with embed
+            await interaction.editReply({ embeds: [ghostEmbed] });
+
+            // NEXT ----------------------------------------------------------
+        } else if (interaction.options.getSubcommand() === 'soundrecorder') {
+            const option = interaction.options.getString('display') ?? 'all';
+            const equipmentName = 'Soundrecorder';
+
+            // set embed title
+            ghostEmbed.setTitle(equipmentName);
+
+            // if everything should be displayed
+            if (option === 'all') {
+                // update embed
+                ghostEmbed
+                .setDescription(`All information about ${equipmentName}!`)
+                .addFields(
+                    { name: '**General:**', value: soundrecgen },
+                    { name: '**Tier 1:**', value: soundrecT1 },
+                    { name: '**Tier 2:**', value: soundrecT2 },
+                    { name: '**Tier 3:**', value: soundrecT3 }
+                )
+            } else {
+                // if specifics are displayed, change values to reply with
+                let title;
+                let displayValue;
+                let descriptionValue;
+
+                switch(option) {
+                    case 'soundrecT1':
+                        title = '**Tier 1:**';
+                        displayValue = soundrecT1;
+                        descriptionValue = 'soundrecT1';
+                        break;
+                    case 'soundrecT2':
+                        title = '**Tier 2:**';
+                        displayValue = soundrecT2;
+                        descriptionValue = 'soundrecT2';
+                        break;
+                    case 'soundrecT3':
+                        title = '**Tier 3:**';
+                        displayValue = soundrecT3;
+                        descriptionValue = 'soundrecT3';
+                        break;
+                }
+
+                // update the embed
+                ghostEmbed
+                .addFields(
+                    { name: '**General:**', value: soundrecgen },
                     { name: title, value: displayValue }
                 )
                 .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
