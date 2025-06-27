@@ -105,6 +105,7 @@ module.exports = {
                     { name: 'Flashlight', value: 'Command: /flashlight', inline: true },
                     { name: 'Thermometer', value: 'Command: /thermometer', inline: true },
                     { name: 'Tripod', value: 'Command: /tripod', inline: true },
+                    { name: 'Soundrecorder', value: 'Command: /sound-recorder', inline: true },
                 ).setFooter({
                     text: 'Boooo!',
                 })
@@ -137,10 +138,11 @@ module.exports = {
                     { name: '/gtk', value: 'Stuff that is nice to know', inline: true },
                     { name: '/interaction-photo', value: 'Tips for taking photos of ghost interactions', inline: true },
                     { name: '/posession-photo', value: 'Tips for taking photos of cursed posessions', inline: true },
-                    { name: '/photo-rewards', value: 'How prioritize which photos you should take', inline: true },
+                    { name: '/media', value: 'Info about media and the rewards', inline: true },
                     { name: '/hunt-sanity', value: 'At what sanity ghosts can hunt you', inline: true },
                     { name: '/smudging', value: 'What you should know about smudging', inline: true },
                     { name: '/dirty-water-photo', value: 'Tips about taking dirty water photos', inline: true },
+                    { name: '/video', value: 'What you should know about capturing videos', inline: true },
                 )
                 .setFooter({
                     text: 'Boooo!',

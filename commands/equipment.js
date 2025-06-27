@@ -67,7 +67,7 @@ module.exports = {
     //soundrecorder
     .addSubcommand(subcommand =>
         subcommand
-        .setName('sound-recorder')
+        .setName('soundrecorder')
         .setDescription('Shows information about the soundrecorder.')
         .addStringOption(option =>
             option

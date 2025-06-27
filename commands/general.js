@@ -187,7 +187,7 @@ module.exports = {
         } else if (subcommand === 'video') {
             generalEmbed
                 .setTitle('Taking videos')
-                .setDescription("A total of five videos can be captured in an investigation. If there is something, that can be recorded, a rectangle will show up on teh screen of the camera. To record hold down the 'use' Button (Default: right click) till it's over. The rectangle will stay a bit longer than the recordable interaction is.\n Videos can also be recorded from the CCTV-Monitor in the Truck.");
+                .setDescription("A total of five videos can be captured in an investigation. If there is something, that can be recorded, a rectangle will show up on the screen of the camera. To record hold down the 'use' Button (Default: right click) till it's over. The rectangle will stay a bit longer than the recordable interaction is.\n Videos can also be recorded from the CCTV-Monitor in the Truck.");
         } else if (subcommand === 'record-sounds') {
             generalEmbed
                 .setTitle('Record sounds')
