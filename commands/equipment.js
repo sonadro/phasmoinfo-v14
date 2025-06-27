@@ -67,7 +67,7 @@ module.exports = {
     //soundrecorder
     .addSubcommand(subcommand =>
         subcommand
-        .setName('soundrecorder')
+        .setName('sound-recorder')
         .setDescription('Shows information about the soundrecorder.')
         .addStringOption(option =>
             option
@@ -508,7 +508,7 @@ module.exports = {
             await interaction.editReply({ embeds: [ghostEmbed] });
 
             // NEXT ----------------------------------------------------------
-        } else if (interaction.options.getSubcommand() === 'soundrecorder') {
+        } else if (interaction.options.getSubcommand() === 'sound-recorder') {
             const option = interaction.options.getString('display') ?? 'all';
             const equipmentName = 'Soundrecorder';
 
