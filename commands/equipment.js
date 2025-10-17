@@ -121,11 +121,6 @@ module.exports = {
         subcommand
         .setName('spiritbox-questions')
         .setDescription('Shows questions you can ask on the Spirit box.')
-        .addStringOption(option =>
-            option
-            .setName('display')
-            .setDescription('The info to display')
-        )
     )
 
     //thermo
@@ -693,15 +688,13 @@ module.exports = {
             ghostEmbed.setTitle(equipmentName);
 
             // if everything should be displayed
-            if (option === 'all') {
-                // update embed
+            // update embed
                 ghostEmbed
                 .setDescription(`All ${equipmentName}!`)
                 .addFields(
                     { name: '**Questions you can ask on the spiritbox:**', value: boxgen }
                 )
                 .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
-            }
 
             // reply with embed
          //   await interaction.editReply({ embeds: [ghostEmbed] });    
