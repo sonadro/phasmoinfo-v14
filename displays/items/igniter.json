@@ -1,6 +1,6 @@
 {
     "ignitergen": "Igniter can be used to light incence, firelight and the summoning circle. It emits a small amount of light when activated, but be careful - they might not last long! \nHold in hand and use with primary use key (default: right click), light objects with secondary use key (default: F). Holding firelight in hand can be lit with secondary use key (default: F), incence with primary use key (default: right click)! \nA lighter can be carried in addition to the 3 items the player can carry at once!",
     "igniterT1": "-> unlocked at level 12 \nThese matches are perfect for lighting firelight or incence, but remember there is a limited amount of uses! \n-> 10s duration, 10 uses, consumeable",
-    "igniterT2": "-> unlocked at level 41 \nA gas lighter that emits more light than mathces and lasts longer. You can see the liquid drain inside when using it, make sure you have enough left when you need it! \n-> min duration, consumeable",
-	"igniterT3": "  -> unlocked at level 75 \nThis lighter lasts way longer. With a larger flame, the light it provides is brighter and in larger range. \n-> 10min duration, waterproof"
+    "igniterT2": "-> unlocked at level 37 \nA gas lighter that emits more light than mathces and lasts longer. You can see the liquid drain inside when using it, make sure you have enough left when you need it! \n-> min duration, consumeable",
+	"igniterT3": "  -> unlocked at level 52 \nThis lighter lasts way longer. With a larger flame, the light it provides is brighter and in larger range. \n-> 10min duration, waterproof"
 }

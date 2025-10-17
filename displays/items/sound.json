@@ -1,6 +1,6 @@
 {
     "soundgen": "The sensor can be placed with secondary use key (default: F). It will detect any noise in a sperical area around the sensor, visible on the sidemap in the truck. \nThe size of the sphere can be changed or the sound can be muted with the buttons next to the Sensor. Be aware of noises picked up, made by other players! Talking over Walkie-Talkie won't cause a reading. \nYou can listen to the remote playback whilst checking the sound sensors!",
-        "soundT1": "-> unlocked at level 11 \nA small microphone attached on a mini tripod. Cheap and efficient. \n-> 5 or 10m range, circle sensor shape, placeable, electronic",
+        "soundT1": "-> unlocked at level 10 \nA small microphone attached on a mini tripod. Cheap and efficient. \n-> 5 or 10m range, circle sensor shape, placeable, electronic",
         "soundT2": "-> unlocked at level 32 \nTwo higher quality microphones, improved to feature three size settings. \n-> 5; 10 or 15m range, circle sensor shape, placeable, electronic",
-        "soundT3": "-> unlocked at level 58 \nThis sensor allows you oto change the shape of it's sphere, represented by the direction the microphones are facing! \nForward: Cone, Outward: Sides, Inward: Sphere \n-> 5; 10 or 15m range, circle; cone or sides shaped sensor, placeable, electronic"
+        "soundT3": "-> unlocked at level 52 \nThis sensor allows you oto change the shape of it's sphere, represented by the direction the microphones are facing! \nForward: Cone, Outward: Sides, Inward: Sphere \n-> 5; 10 or 15m range, circle; cone or sides shaped sensor, placeable, electronic"
     }

@@ -1,6 +1,6 @@
 {
     "photogen": "The camera can be used to take pictures of objects ingame. Holding it in hand automatically turns it on. use primary key (default: right click) to take a picture, first 10 pictures takes will be recorded in the journal and will give money and xp reward. \nKeep in mind that photos taken aren't synced with other players!",
-    "photoT1": "An old polteroid camera with high interference during ghost activity.\n-> high time between photos",
-    "photoT2": "-> unlocked at level 25 \nA digital camera that can take photos way fatser. It will give an additional bonus of 1$ per photo!\n-> medium time between photos, display screen, medium paranormal interference, electronic",
-	"photoT3": "-> unlocked at level 70 \nTop-of-the-rnge camera that takes photos super fast and has less interference during ghost activity. It will give an additional bonus of 2$ per photo!\n-> low time between photos, display screen, medium paranormal interference, electronic"
+    "photoT1": "-> unlocked at level 2 \nAn old polteroid camera with high interference during ghost activity.\n-> high time between photos",
+    "photoT2": "-> unlocked at level 23 \nA digital camera that can take photos way fatser. It will give an additional bonus of 1$ per photo!\n-> medium time between photos, display screen, medium paranormal interference, electronic",
+	"photoT3": "-> unlocked at level 55 \nTop-of-the-rnge camera that takes photos super fast and has less interference during ghost activity. It will give an additional bonus of 2$ per photo!\n-> low time between photos, display screen, medium paranormal interference, electronic"
 }

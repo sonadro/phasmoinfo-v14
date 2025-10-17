@@ -1,6 +1,6 @@
 {
     "paramicgen": "Parabolic microphone can be hold in hand to track paranormal sounds. Turning it on with primary use key (default: right click) will muffle all sounds around the player and make sounds in direction of the parabolic microphone louder.",
-    "paramicT1": "-> unlocked at level 7 \nThis parabolic microphone can amplify sounds much further than the naked ear. \n-> 20m range, electronic",
-    "paramicT2": "-> unlocked at level 31 \nThis parabolic microphone has been updated with a small display, showing how loud the nois was.\n-> 30m range, display screen, electronic",
-	"paramicT3": "-> unlocked at level 72 \nThis parabolic microphone has been improved with visual sound indicator, showing diration, distance and volume of the noise. It also allowes you to hear sounds form the floor above and below you with an indicator on the dispaly where it came from. \n-> 30m range, display screen, distance indicator, directional indicator, electronic"
+    "paramicT1": "-> unlocked at level 5 \nThis parabolic microphone can amplify sounds much further than the naked ear. \n-> 20m range, electronic",
+    "paramicT2": "-> unlocked at level 32 \nThis parabolic microphone has been updated with a small display, showing how loud the nois was.\n-> 30m range, display screen, electronic",
+	"paramicT3": "-> unlocked at level 70 \nThis parabolic microphone has been improved with visual sound indicator, showing diration, distance and volume of the noise. It also allowes you to hear sounds form the floor above and below you with an indicator on the dispaly where it came from. \n-> 30m range, display screen, distance indicator, directional indicator, electronic"
 }

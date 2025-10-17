@@ -5,6 +5,7 @@ const { dotsgen, dotsT1, dotsT2, dotsT3 } = require('../displays/items/dots.json
 const { emfgen, emfT1, emfT2, emfT3 } = require('../displays/items/emf.json');
 const { bookgen, bookT1, bookT2, bookT3 } = require('../displays/items/book.json');
 const { boxgen, boxT1, boxT2, boxT3 } = require('../displays/items/box.json');
+const { boxquesgen } = require('../displays/items/boxques.json');
 const { thermogen, thermoT1, thermoT2, thermoT3 } = require('../displays/items/thermometer.json');
 const { uvgen, uvT1, uvT2, uvT3 } = require('../displays/items/uv.json');
 const { videogen, videoT1, videoT2, videoT3 } = require('../displays/items/video.json');
@@ -112,6 +113,18 @@ module.exports = {
                 { name: 'Tier 2', value: 'boxT2' },
                 { name: 'Tier 3', value: 'boxT3' },
             )
+        )
+    )
+
+    //spirit box questions
+    .addSubcommand(subcommand =>
+        subcommand
+        .setName('spiritbox-questions')
+        .setDescription('Shows questions you can ask on the Spirit box.')
+        .addStringOption(option =>
+            option
+            .setName('display')
+            .setDescription('The info to display')
         )
     )
 
@@ -671,6 +684,27 @@ module.exports = {
 
             // reply with embed
             await interaction.editReply({ embeds: [ghostEmbed] });
+
+        // NEXT ----------------------------------------------------------
+        } else if (interaction.options.getSubcommand() === 'spiritbox-questions') {
+            const equipmentName = 'Spiritbox questions';
+
+            // set embed title
+            ghostEmbed.setTitle(equipmentName);
+
+            // if everything should be displayed
+            if (option === 'all') {
+                // update embed
+                ghostEmbed
+                .setDescription(`All ${equipmentName}!`)
+                .addFields(
+                    { name: '**Questions you can ask on the spiritbox:**', value: boxgen }
+                )
+                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
+            }
+
+            // reply with embed
+         //   await interaction.editReply({ embeds: [ghostEmbed] });    
 
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'thermometer') {

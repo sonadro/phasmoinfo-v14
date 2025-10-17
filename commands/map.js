@@ -124,9 +124,9 @@ module.exports = {
                     .setTitle('Grafton Farmhouse')
                     .addFields(
                         { name: '**Size:** ', value: 'Small', inline: true},
-                        { name: '**Rooms:** ', value: '13', inline: true}
+                        { name: '**Rooms:** ', value: '14', inline: true}
                     )
-                    .setImage('https://i.imgur.com/vGfqalT.png');
+                    .setImage('https://i.imgur.com/I2YuMkh.png');
             } else if (subcommand === 'high-school') {
                 mapEmbed
                     .setTitle('Brownstone High School')

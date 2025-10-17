@@ -1,6 +1,6 @@
 {
     "incensegen": "Incense can be used to prevent hunting for a period of time when lit near the ghost (/smudging) or to prevent a ghost from kill you during a hunt by making it wander aimlessly for 5s (50% more for moroi). \nincense can be lit with primary use key (default: right click) when holding in hand or secondary use key (default: F) when on the floor. Make sure you always have a igniter in your inventory when you wanna smudge!",
     "incenseT1": "-> unlocked at level 14 \nA small bundle of black sage, can be lit with any igniter. \n-> 3m range, 5s duration, consumeable",
-    "incenseT2": "-> unlocked at level 42 nA bundle of much more black sage, allowing for a longer burn time. It will slower the ghost for it's effect duration! \n-> 4m range, 6s duration, 5s slower ghost, consumeable",
-	"incenseT3": "-> unlocked at level 85 \nThis incense burner has a larger range and longer burn time. If the ghost is initially repelled, it will be stunned, halting it's movement for a short period! \n-> 5m range, 7s duration, 5s halting ghosts during hunts"
+    "incenseT2": "-> unlocked at level 37 \nA bundle of much more black sage, allowing for a longer burn time. It will slower the ghost for it's effect duration! \n-> 4m range, 6s duration, 5s slower ghost, consumeable",
+	"incenseT3": "-> unlocked at level 80 \nThis incense burner has a larger range and longer burn time. If the ghost is initially repelled, it will be stunned, halting it's movement for a short period! \n-> 5m range, 7s duration, 5s halting ghosts during hunts"
 }

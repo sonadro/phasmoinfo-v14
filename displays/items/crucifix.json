@@ -1,6 +1,6 @@
 {
     "crucifixgen": "Cricifix can be used to prevent the ghost from hunting when placed near the ghost. Place it with secondary use key (default: F), showing the range of it's effect. The range is 50% larger when the ghost is a demon. \nIt will only prevent a hunt from happening, not stopping an ongoing hunt! The time the ghost can use the cricifux is the same time as between hunts (25s, 20s for demons)",
-    "crucifixT1": "-> unlocked at level 8 \nTwo scraps of wood tied together. It can be used to stop one single attack! \n-> 3m range, 1 use, placeable, consumeable",
-    "crucifixT2": "-> unlocked at level 37 \nA metal crucifix that can be used to block two attacksin a larger range! \n-> 4m range, 2 uses, placeable, consumeable",
-      "crucifixT3": "-> unlocked at level 90 \nCrucifix with an even larger range. Additionally, an unused can prevent a cursed hunt, sonuming both uses!\n-> prevents 1 cursed hunt, 5m range, 2 uses, placeable, consumeable"
+    "crucifixT1": "-> unlocked at level 7 \nTwo scraps of wood tied together. It can be used to stop one single attack! \n-> 3m range, 1 use, placeable, consumeable",
+    "crucifixT2": "-> unlocked at level 34 \nA metal crucifix that can be used to block two attacksin a larger range! \n-> 4m range, 2 uses, placeable, consumeable",
+      "crucifixT3": "-> unlocked at level 80 \nCrucifix with an even larger range. Additionally, an unused can prevent a cursed hunt, sonuming both uses!\n-> prevents 1 cursed hunt, 5m range, 2 uses, placeable, consumeable"
   }

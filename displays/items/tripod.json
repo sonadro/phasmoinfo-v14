@@ -1,6 +1,6 @@
 {
     "tripodgen": "Cameras can be placed on tripods with secondary use key (default: F). To place a Tripod it has to be dropped, it will drop directly below the player and face in the direction the player was facing. \nTripods are bulky items, and thus up your hand slot while carrying it - they can not be stored in your inventory!",
-    "tripodT1": "-> unlocked at level 10 \nBetter watch this Tripod doesn't fall over! Ghosts may interfere with your placed cameras and attempt to knock them over! \n-> placeable, medium knockdown chance",
+    "tripodT1": "-> unlocked at level 9 \nBetter watch this Tripod doesn't fall over! Ghosts may interfere with your placed cameras and attempt to knock them over! \n-> placeable, medium knockdown chance",
     "tripodT2": "-> unlocked at level 34 \nThis tripod is upgarded with a rotational motor, making it possible to change the view from the truck. You can use the on-screen controls to rotate the tripod and giving you a new angle. \n-> placeable, rotation control, medium knockdown chance",
-	"tripodT3": "-> unlocked at level 62 \nTripod with a rotational motor like the previous version, but the ghosts will knock them over way less! \n-> placeable, rotation control, ´low knockover chnace"
+	"tripodT3": "-> unlocked at level 60 \nTripod with a rotational motor like the previous version, but the ghosts will knock them over way less! \n-> placeable, rotation control, ´low knockover chnace"
 }
