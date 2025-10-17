@@ -697,7 +697,7 @@ module.exports = {
                 .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
 
             // reply with embed
-         //   await interaction.editReply({ embeds: [ghostEmbed] });    
+            await interaction.editReply({ embeds: [ghostEmbed] });    
 
         // NEXT ----------------------------------------------------------
         } else if (interaction.options.getSubcommand() === 'thermometer') {
