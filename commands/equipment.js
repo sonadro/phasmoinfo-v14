@@ -687,14 +687,13 @@ module.exports = {
             // set embed title
             ghostEmbed.setTitle(equipmentName);
 
-            // if everything should be displayed
             // update embed
                 ghostEmbed
                 .setDescription(`All ${equipmentName}!`)
                 .addFields(
                     { name: '**Questions you can ask on the spiritbox:**', value: boxgen }
                 )
-                .setDescription(`Check the ${equipmentName} ${descriptionValue}!`)
+                .setDescription(`Check the ${equipmentName}!`)
 
             // reply with embed
             await interaction.editReply({ embeds: [ghostEmbed] });    
