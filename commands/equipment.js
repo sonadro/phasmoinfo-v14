@@ -691,7 +691,7 @@ module.exports = {
                 ghostEmbed
                 .setDescription(`All ${equipmentName}!`)
                 .addFields(
-                    { name: '**Questions you can ask on the spiritbox:**', value: boxgen }
+                    { name: '**Questions you can ask on the spiritbox:**', value: boxquesgen }
                 )
                 .setDescription(`Check the ${equipmentName}!`)
 
