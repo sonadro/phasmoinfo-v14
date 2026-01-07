@@ -54,7 +54,7 @@ module.exports = {
         .setTitle(ghostData.name)
         .addFields(
           { name: 'Evidence', value: ghostData.evidence || 'N/A' },
-          { name: 'Traits', value: ghostData.traits || 'N/A' },
+          { name: 'Trait', value: ghostData.trait || 'N/A' },
           { name: 'Ability', value: ghostData.ability || 'N/A' }
         )
         .setColor('#52FFFA')

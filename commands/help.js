@@ -62,7 +62,7 @@ module.exports = {
         const helpEmbed = new EmbedBuilder()
             .setColor('#FF5A5A')
 
-        if (subcommand === 'cursed') {
+        if (subcommand === 'posessions') {
             // update embed
             helpEmbed
                 .setTitle('Cursed Posessions')
@@ -153,34 +153,34 @@ module.exports = {
                 .setTitle('Ghosts')
                 .setDescription('Overview of all Ghosts')
                 .addFields(
-                    { name: 'Spirit', value: 'Command: /spirit', inline: true},
-                    { name: 'Yokai', value: 'Command: /yokai', inline: true},
-                    { name: 'Wraith', value: 'Command: /wraith', inline: true},
-                    { name: 'Hantu', value: 'Command: /hantu', inline: true},
-                    { name: 'Phantom', value: 'Command: /phantom', inline: true},
-                    { name: 'Poltergeist', value: 'Command: /poltergeist', inline: true},
-                    { name: 'Jinn', value: 'Command: /jinn', inline: true},
-                    { name: 'Demon', value: 'Command: /demon', inline: true},
-                    { name: 'Goryo', value: 'Command: /goryo', inline: true},
-                    { name: 'Onryo', value: 'Command: /onryo', inline: true},
-                    { name: 'Myling', value: 'Command: /myling', inline: true},
-                    { name: 'Banshee', value: 'Command: /banshee', inline: true},
-                    { name: 'The Twins', value: 'Command: /twins', inline: true},
-                    { name: 'Mare', value: 'Command: /mare', inline: true},
-                    { name: 'Raiju', value: 'Command: /raiju', inline: true},
-                    { name: 'Revenant', value: 'Command: /revenant', inline: true},
-                    { name: 'Obake', value: 'Command: /obake', inline: true},
-                    { name: 'Shade', value: 'Command: /shade', inline: true},
-                    { name: 'Yurei', value: 'Command: /yurei', inline: true},
-                    { name: 'Oni', value: 'Command: /oni', inline: true},
-                    { name: 'The Mimic', value: 'Command: /mimic', inline: true},
-                    { name: 'Moroi', value: 'Command: /moroi', inline: true},
-                    { name: 'Deogen', value: 'Command: /deogen', inline: true},
-                    { name: 'Thaye', value: 'Command: /thaye', inline: true},
-                    { name: 'Dayan', value: 'Command: /dayan', inline: true},
-                    { name: 'Gallu', value: 'Command: /gallu', inline: true},
-                    { name: 'Obambo', value: 'Command: /obambo', inline: true}
-                )
+                    { name: 'Spirit', value: 'Command: /ghost spirit', inline: true},
+                    { name: 'Yokai', value: 'Command: /ghost yokai', inline: true},
+                    { name: 'Wraith', value: 'Command: /ghost wraith', inline: true},
+                    { name: 'Hantu', value: 'Command: /ghost hantu', inline: true},
+                    { name: 'Phantom', value: 'Command: /ghost phantom', inline: true},
+                    { name: 'Poltergeist', value: 'Command: /ghost poltergeist', inline: true},
+                    { name: 'Jinn', value: 'Command: /ghost jinn', inline: true},
+                    { name: 'Demon', value: 'Command: /ghost demon', inline: true},
+                    { name: 'Goryo', value: 'Command: /ghost goryo', inline: true},
+                    { name: 'Onryo', value: 'Command: /ghost onryo', inline: true},
+                    { name: 'Myling', value: 'Command: /ghost myling', inline: true},
+                    { name: 'Banshee', value: 'Command: /ghost banshee', inline: true},
+                    { name: 'The Twins', value: 'Command: /ghost twins', inline: true},
+                    { name: 'Mare', value: 'Command: /ghost mare', inline: true},
+                    { name: 'Raiju', value: 'Command: /ghost raiju', inline: true},
+                    { name: 'Revenant', value: 'Command: /ghost revenant', inline: true},
+                    { name: 'Obake', value: 'Command: /ghost obake', inline: true},
+                    { name: 'Shade', value: 'Command: /ghost shade', inline: true},
+                    { name: 'Yurei', value: 'Command: /ghost yurei', inline: true},
+                    { name: 'Oni', value: 'Command: /ghost oni', inline: true},
+                    { name: 'The Mimic', value: 'Command: /ghost mimic', inline: true},
+                    { name: 'Moroi', value: 'Command: /ghost moroi', inline: true},
+                    { name: 'Deogen', value: 'Command: /ghost deogen', inline: true},
+                    { name: 'Thaye', value: 'Command: /ghost thaye', inline: true},
+                    { name: 'Dayan', value: 'Command: /ghost dayan', inline: true},
+                    { name: 'Gallu', value: 'Command: /ghost gallu', inline: true},
+                    { name: 'Obambo', value: 'Command: /ghost obambo', inline: true}
+                )  
                 .setFooter({
                     text: 'Boooo!',
             })
