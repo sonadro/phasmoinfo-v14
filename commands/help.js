@@ -176,7 +176,10 @@ module.exports = {
                     { name: 'The Mimic', value: 'Command: /mimic', inline: true},
                     { name: 'Moroi', value: 'Command: /moroi', inline: true},
                     { name: 'Deogen', value: 'Command: /deogen', inline: true},
-                    { name: 'Thaye', value: 'Command: /thaye', inline: true}
+                    { name: 'Thaye', value: 'Command: /thaye', inline: true},
+                    { name: 'Dayan', value: 'Command: /dayan', inline: true},
+                    { name: 'Gallu', value: 'Command: /gallu', inline: true},
+                    { name: 'Obambo', value: 'Command: /obambo', inline: true}
                 )
                 .setFooter({
                     text: 'Boooo!',
@@ -199,7 +202,8 @@ module.exports = {
                     { name: 'Sunny Meadows Mental Institution', value: 'Command: /sunny-meadows', inline: true},
                     { name: 'Sunny Meadows Mental Institution - RESTRICTED', value: 'Command: /restricted-meadows', inline: true},
                     { name: 'Camp Woodwind', value: 'Command: /camp-woodwind', inline: true},
-                    { name: 'Point Hope', value: 'Command: /point-hope', inline: true}
+                    { name: 'Point Hope', value: 'Command: /point-hope', inline: true},
+                    { name: "Nell's Diner", value: 'Command: /nells-diner', inline: true}
                 )
                 .setFooter({
                     text: 'Boooo!',

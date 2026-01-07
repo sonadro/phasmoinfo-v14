@@ -77,6 +77,12 @@ module.exports = {
                 .setName('camp-woodwind')
                 .setDescription('Information about camp woodwind'))
 
+        // nells diner
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('nells-diner')
+                .setDescription("Information about nell's diner"))        
+
         // point hope
         .addSubcommand(subcommand =>
             subcommand
@@ -191,6 +197,14 @@ module.exports = {
                         { name: '**Rooms:** ', value: '11', inline: true}
                     )
                     .setImage('https://i.imgur.com/x9xYfaC.png');
+            } else if (subcommand === 'nells-diner') {
+                mapEmbed
+                    .setTitle("Nell's Diner")
+                    .addFields(
+                        { name: '**Size:** ', value: 'Small', inline: true},
+                        { name: '**Rooms:** ', value: '14', inline: true}
+                    )
+                    .setImage('https://i.imgur.com/wFTDWgA.png');
             } else if (subcommand === 'point-hope') {
                 mapEmbed
                     .setTitle('Point Hope')

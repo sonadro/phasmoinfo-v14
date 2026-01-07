@@ -25,6 +25,9 @@ const { twiEvi, twiTra, twiAbi } = require('../displays/ghosts/twins.json');
 const { wraEvi, wraTra, wraAbi } = require('../displays/ghosts/wraith.json');
 const { yokEvi, yokTra, yokAbi } = require('../displays/ghosts/yokai.json');
 const { yurEvi, yurTra, yurAbi } = require('../displays/ghosts/yurei.json');
+const { dayEvi, dayTra, dayAbi } = require('../displays/ghosts/dayan.json');
+const { galEvi, galTra, galAbi } = require('../displays/ghosts/gallu.json');
+const { obaEvi, obaTra, obaAbi } = require('../displays/ghosts/obambo.json');
 
 // command
 module.exports = {
@@ -65,6 +68,57 @@ module.exports = {
                         )
                     )
                 )
+        
+        // dayun
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('dayan')
+                .setDescription('Shows information about the Dayan.')
+                .addStringOption(option =>
+                    option
+                        .setName('display')
+                        .setDescription('The info to display')
+                        .addChoices(
+                            { name: 'Evidence', value: 'dayEvi' },
+                            { name: 'Traits', value: 'dayTra' },
+                            { name: 'Hidden Abilities', value: 'dayAbi' },
+                        )
+                    )
+                )        
+
+        // gallu
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('gallu')
+                .setDescription('Shows information about the Gallu.')
+                .addStringOption(option =>
+                    option
+                        .setName('display')
+                        .setDescription('The info to display')
+                        .addChoices(
+                            { name: 'Evidence', value: 'galEvi' },
+                            { name: 'Traits', value: 'galTra' },
+                            { name: 'Hidden Abilities', value: 'galAbi' },
+                        )
+                    )
+                )
+
+        // obambo
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('obambo')
+                .setDescription('Shows information about the Obambo.')
+                .addStringOption(option =>
+                    option
+                        .setName('display')
+                        .setDescription('The info to display')
+                        .addChoices(
+                            { name: 'Evidence', value: 'obaEvi' },
+                            { name: 'Traits', value: 'obaTra' },
+                            { name: 'Hidden Abilities', value: 'obaAbi' },
+                        )
+                    )
+                )        
 
         // deogen
         .addSubcommand(subcommand =>
@@ -550,6 +604,157 @@ module.exports = {
                 }
                 // reply with embed
                 await interaction.editReply({ embeds: [ghostEmbed] });
+
+                // NEXT GHOST ----------------------------------------------------------
+            } else if (interaction.options.getSubcommand() === 'dayun') {
+                const option = interaction.options.getString('display') ?? 'all';
+                const ghostName = 'Dayun';
+
+                // set embed title
+                ghostEmbed.setTitle(ghostName);
+
+                // if everything should be displayed
+                if (option === 'all') {
+                    // update embed
+                    ghostEmbed
+                        .setDescription(`All information about ${ghostName}!`)
+                        .addFields(
+                            { name: '**Evidence:**', value: dayEvi },
+                            { name: '**Traits:**', value: dayTra },
+                            { name: '**Hidden abilities:**', value: dayAbi }
+                        )
+                } else {
+                    // if specifics are displayed, change values to reply with
+                    let title;
+                    let displayValue;
+                    let descriptionValue;
+                    switch(option) {
+                        case 'dayEvi':
+                            title = '**Evidence:**';
+                            displayValue = dayEvi;
+                            descriptionValue = 'evidence';
+                            break;
+                        case 'dayTra':
+                            title = '**Traits:**';
+                            displayValue = dayTra;
+                            descriptionValue = 'traits';
+                            break;
+                        case 'dayAbi':
+                            title = '**Hidden abilities:**';
+                            displayValue = dayAbi;
+                            descriptionValue = 'abilities';
+                            break;
+                    }
+
+                    // update the embed
+                    ghostEmbed
+                        .addFields(
+                            { name: title, value: displayValue }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                }
+                // reply with embed
+                await interaction.editReply({ embeds: [ghostEmbed] });
+
+                // NEXT GHOST ----------------------------------------------------------
+            } else if (interaction.options.getSubcommand() === 'gallu') {
+                const option = interaction.options.getString('display') ?? 'all';
+                const ghostName = 'Gallu';
+
+                // set embed title
+                ghostEmbed.setTitle(ghostName);
+
+                // if everything should be displayed
+                if (option === 'all') {
+                    // update embed
+                    ghostEmbed
+                        .setDescription(`All information about ${ghostName}!`)
+                        .addFields(
+                            { name: '**Evidence:**', value: galEvi },
+                            { name: '**Traits:**', value: galTra },
+                            { name: '**Hidden abilities:**', value: galAbi }
+                        )
+                } else {
+                    // if specifics are displayed, change values to reply with
+                    let title;
+                    let displayValue;
+                    let descriptionValue;
+                    switch(option) {
+                        case 'galEvi':
+                            title = '**Evidence:**';
+                            displayValue = galEvi;
+                            descriptionValue = 'evidence';
+                            break;
+                        case 'galTra':
+                            title = '**Traits:**';
+                            displayValue = galTra;
+                            descriptionValue = 'traits';
+                            break;
+                        case 'galAbi':
+                            title = '**Hidden abilities:**';
+                            displayValue = galAbi;
+                            descriptionValue = 'abilities';
+                            break;
+                    }
+
+                    // update the embed
+                    ghostEmbed
+                        .addFields(
+                            { name: title, value: displayValue }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                }
+                // reply with embed
+                await interaction.editReply({ embeds: [ghostEmbed] });
+
+                // NEXT GHOST ----------------------------------------------------------
+            } else if (interaction.options.getSubcommand() === 'obambo') {
+                const option = interaction.options.getString('display') ?? 'all';
+                const ghostName = 'Obambo';
+
+                // set embed title
+                ghostEmbed.setTitle(ghostName);
+
+                // if everything should be displayed
+                if (option === 'all') {
+                    // update embed
+                    ghostEmbed
+                        .setDescription(`All information about ${ghostName}!`)
+                        .addFields(
+                            { name: '**Evidence:**', value: obaEvi },
+                            { name: '**Traits:**', value: obaTra },
+                            { name: '**Hidden abilities:**', value: obaAbi }
+                        )
+                } else {
+                    // if specifics are displayed, change values to reply with
+                    let title;
+                    let displayValue;
+                    let descriptionValue;
+                    switch(option) {
+                        case 'obaEvi':
+                            title = '**Evidence:**';
+                            displayValue = obaEvi;
+                            descriptionValue = 'evidence';
+                            break;
+                        case 'obaTra':
+                            title = '**Traits:**';
+                            displayValue = obaTra;
+                            descriptionValue = 'traits';
+                            break;
+                        case 'obaAbi':
+                            title = '**Hidden abilities:**';
+                            displayValue = obaAbi;
+                            descriptionValue = 'abilities';
+                            break;
+                    }
+
+                    // update the embed
+                    ghostEmbed
+                        .addFields(
+                            { name: title, value: displayValue }
+                        ).setDescription(`Check the ${ghostName} ${descriptionValue}!`)
+                }
+                // reply with embed
+                await interaction.editReply({ embeds: [ghostEmbed] });
+
 
                 // NEXT GHOST ----------------------------------------------------------
             } else if (interaction.options.getSubcommand() === 'deogen') {
