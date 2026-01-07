@@ -24,11 +24,23 @@ const ghostCommand = new SlashCommandBuilder()
       .setName('type')
       .setDescription('Select which ghost to show')
       .setRequired(true)
-      .addChoices(...ghostChoices) // Alle automatisch geladenen Ghosts
+      .setAutocomplete(true) // <-- Autocomplete
   );
 
 module.exports = {
   data: ghostCommand,
+
+  async autocomplete(interaction) {
+    const focusedValue = interaction.options.getFocused(); // Was der Nutzer gerade tippt
+
+    const filtered = ghostDataMap.filter(ghost =>
+      ghost.name.toLowerCase().includes(focusedValue.toLowerCase())
+    ).slice(0, 25); // Discord erlaubt max. 25 Vorschläge
+
+    await interaction.respond(
+      filtered.map(ghost => ({ name: ghost.name, value: ghost.value }))
+    );
+  },
 
   async execute(interaction) {
     const ghostType = interaction.options.getString('type'); // z.B. "testi"
@@ -38,12 +50,11 @@ module.exports = {
       const rawData = fs.readFileSync(filePath, 'utf-8');
       const ghostData = JSON.parse(rawData);
 
-      // Embed erstellen
       const embed = new EmbedBuilder()
         .setTitle(ghostData.name)
         .addFields(
           { name: 'Evidence', value: ghostData.evidence || 'N/A' },
-          { name: 'Trait', value: ghostData.trait || 'N/A' },
+          { name: 'Traits', value: ghostData.traits || 'N/A' },
           { name: 'Ability', value: ghostData.ability || 'N/A' }
         )
         .setColor('#52FFFA')
