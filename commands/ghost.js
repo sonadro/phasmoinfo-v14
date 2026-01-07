@@ -27,7 +27,7 @@ const { yokEvi, yokTra, yokAbi } = require('../displays/ghosts/yokai.json');
 const { yurEvi, yurTra, yurAbi } = require('../displays/ghosts/yurei.json');
 const { dayEvi, dayTra, dayAbi } = require('../displays/ghosts/dayan.json');
 const { galEvi, galTra, galAbi } = require('../displays/ghosts/gallu.json');
-const { obaEvi, obaTra, obaAbi } = require('../displays/ghosts/obambo.json');
+const { obamEvi, obamTra, obamAbi } = require('../displays/ghosts/obambo.json');
 
 // command
 module.exports = {
@@ -719,9 +719,9 @@ module.exports = {
                     ghostEmbed
                         .setDescription(`All information about ${ghostName}!`)
                         .addFields(
-                            { name: '**Evidence:**', value: obaEvi },
-                            { name: '**Traits:**', value: obaTra },
-                            { name: '**Hidden abilities:**', value: obaAbi }
+                            { name: '**Evidence:**', value: obamEvi },
+                            { name: '**Traits:**', value: obamTra },
+                            { name: '**Hidden abilities:**', value: obamAbi }
                         )
                 } else {
                     // if specifics are displayed, change values to reply with
@@ -729,19 +729,19 @@ module.exports = {
                     let displayValue;
                     let descriptionValue;
                     switch(option) {
-                        case 'obaEvi':
+                        case 'obamEvi':
                             title = '**Evidence:**';
-                            displayValue = obaEvi;
+                            displayValue = obamEvi;
                             descriptionValue = 'evidence';
                             break;
-                        case 'obaTra':
+                        case 'obamTra':
                             title = '**Traits:**';
-                            displayValue = obaTra;
+                            displayValue = obamTra;
                             descriptionValue = 'traits';
                             break;
-                        case 'obaAbi':
+                        case 'obamAbi':
                             title = '**Hidden abilities:**';
-                            displayValue = obaAbi;
+                            displayValue = obamAbi;
                             descriptionValue = 'abilities';
                             break;
                     }
