@@ -69,7 +69,7 @@ module.exports = {
                     )
                 )
         
-        // dayun
+        // dayan
         .addSubcommand(subcommand =>
             subcommand
                 .setName('dayan')
@@ -113,9 +113,9 @@ module.exports = {
                         .setName('display')
                         .setDescription('The info to display')
                         .addChoices(
-                            { name: 'Evidence', value: 'obaEvi' },
-                            { name: 'Traits', value: 'obaTra' },
-                            { name: 'Hidden Abilities', value: 'obaAbi' },
+                            { name: 'Evidence', value: 'obamEvi' },
+                            { name: 'Traits', value: 'obamTra' },
+                            { name: 'Hidden Abilities', value: 'obamAbi' },
                         )
                     )
                 )        
@@ -606,9 +606,9 @@ module.exports = {
                 await interaction.editReply({ embeds: [ghostEmbed] });
 
                 // NEXT GHOST ----------------------------------------------------------
-            } else if (interaction.options.getSubcommand() === 'dayun') {
+            } else if (interaction.options.getSubcommand() === 'dayan') {
                 const option = interaction.options.getString('display') ?? 'all';
-                const ghostName = 'Dayun';
+                const ghostName = 'Dayan';
 
                 // set embed title
                 ghostEmbed.setTitle(ghostName);
