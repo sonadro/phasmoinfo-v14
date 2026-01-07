@@ -115,74 +115,53 @@ module.exports = {
 
             // === GHOST SUBCOMMAND WITH PAGINATION FIX ===
             } else if (subcommand === 'ghost') {
-                // List of all ghosts
-                const ghosts = [
-                    'Spirit', 'Yokai', 'Wraith', 'Hantu', 'Phantom', 'Poltergeist',
-                    'Jinn', 'Demon', 'Goryo', 'Onryo', 'Myling', 'Banshee', 'The Twins',
-                    'Mare', 'Raiju', 'Revenant', 'Obake', 'Shade', 'Yurei', 'Oni',
-                    'The Mimic', 'Moroi', 'Deogen', 'Thaye', 'Dayan', 'Gallu', 'Obambo'
-                ];
+                } else if (subcommand === 'ghost') {
+    // List of all ghosts
+    const ghosts = [
+        'Spirit', 'Yokai', 'Wraith', 'Hantu', 'Phantom', 'Poltergeist',
+        'Jinn', 'Demon', 'Goryo', 'Onryo', 'Myling', 'Banshee', 'The Twins',
+        'Mare', 'Raiju', 'Revenant', 'Obake', 'Shade', 'Yurei', 'Oni',
+        'The Mimic', 'Moroi', 'Deogen', 'Thaye', 'Dayan', 'Gallu', 'Obambo'
+    ];
 
-                // Discord limits embeds to 25 fields max, so we chunk the ghosts
-                const pageSize = 14; // 14 ghosts per page to fit nicely
-            let page = 0;
+    const pageSize = 14;
+    let page = 0;
 
-            const generateEmbed = (page) => {
-                const start = page * pageSize;
-                const end = start + pageSize;
-                const pageGhosts = ghosts.slice(start, end);
-                return new EmbedBuilder()
-                    .setTitle('Ghosts')
-                    .setDescription('Overview of all Ghosts')
-                    .addFields(pageGhosts.map(g => ({ name: g, value: `Command: /ghost ${g.toLowerCase()}`, inline: true })))
-                    .setFooter({ text: `Page ${page + 1} of ${Math.ceil(ghosts.length / pageSize)}` })
-                    .setColor('#FF5A5A');
-            };
+    const generateEmbed = (page) => {
+        const start = page * pageSize;
+        const end = start + pageSize;
+        const pageGhosts = ghosts.slice(start, end);
+        return new EmbedBuilder()
+            .setTitle('Ghosts')
+            .setDescription('Overview of all Ghosts')
+            .addFields(pageGhosts.map(g => ({ name: g, value: `Command: /ghost ${g.toLowerCase()}`, inline: true })))
+            .setFooter({ text: `Page ${page + 1} of ${Math.ceil(ghosts.length / pageSize)}` })
+            .setColor('#FF5A5A');
+    };
 
-            const row = new ActionRowBuilder()
-                .addComponents(
-                    new ButtonBuilder()
-                        .setCustomId('previous')
-                        .setLabel('Previous')
-                        .setStyle(ButtonStyle.Primary)
-                        .setDisabled(true),
-                    new ButtonBuilder()
-                        .setCustomId('next')
-                        .setLabel('Next')
-                        .setStyle(ButtonStyle.Primary)
-                        .setDisabled(ghosts.length <= pageSize)
-                );
+    const row = new ActionRowBuilder()
+        .addComponents(
+            new ButtonBuilder()
+                .setCustomId('previous')
+                .setLabel('Previous')
+                .setStyle(ButtonStyle.Primary)
+                .setDisabled(true),
+            new ButtonBuilder()
+                .setCustomId('next')
+                .setLabel('Next')
+                .setStyle(ButtonStyle.Primary)
+                .setDisabled(ghosts.length <= pageSize)
+        );
 
-            const message = await interaction.editReply({ embeds: [generateEmbed(page)], components: [row] });
+    // ← REPLACE THIS LINE:
+    const message = await interaction.editReply({
+        embeds: [generateEmbed(page)],
+        components: [row],
+        fetchReply: true // ← important fix
+    });
 
-            const collector = message.createMessageComponentCollector({ time: 60000 });
+    const collector = message.createMessageComponentCollector({ time: 60000 });
 
-            collector.on('collect', async i => {
-                if (!i.isButton()) return;
-
-                if (i.customId === 'next') page++;
-                if (i.customId === 'previous') page--;
-
-                await i.update({
-                    embeds: [generateEmbed(page)],
-                    components: [
-                        new ActionRowBuilder().addComponents(
-                            new ButtonBuilder()
-                                .setCustomId('previous')
-                                .setLabel('Previous')
-                                .setStyle(ButtonStyle.Primary)
-                                .setDisabled(page === 0),
-                            new ButtonBuilder()
-                                .setCustomId('next')
-                                .setLabel('Next')
-                                .setStyle(ButtonStyle.Primary)
-                                .setDisabled(page >= Math.ceil(ghosts.length / pageSize) - 1)
-                        )
-                    ]
-                });
-            });
-
-            return;
 
             // === MAPS SUBCOMMAND ===
             } else if (subcommand === 'maps') {
