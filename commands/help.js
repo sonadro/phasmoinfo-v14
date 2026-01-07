@@ -179,7 +179,7 @@ module.exports = {
             } else if (subcommand === 'impressum') {
                 helpEmbed
                     .setTitle('Impressum')
-                    .setDescription('Info about ghosts, events, maps, and bot coding credits...')
+                    .setDescription('Info about ghosts, events and general stuff - Insym: \nhttps://www.youtube.com/watch?v=6c00T2duoEg \nhttps://www.twitch.tv/insym \n  \nMaps w/ cursed posession locations - Fantismal: \nhttps://imgur.com/a/iEI0tJo \n  \nEquipment, cursed objects, events: \nhttps://phasmophobia.fandom.com/wiki/Main_Page \n  \nMoroi, Deogen & Thaye - Psycho: \n https://www.youtube.com/watch?v=VjbCps35D5Q \nhttps://www.twitch.tv/psychohypnotic \n \nCoded by: \nNullody#5271 & juju~#2239 \n  \nSupport: https://discord.gg/wTTQSkCcPE')
                     .setFooter({ text: 'Boooo!' });
 
             // === RULES SUBCOMMAND ===
