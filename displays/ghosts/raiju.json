@@ -1,5 +1,6 @@
 {
-    "raiEvi": "EMF Level 5 \nGhost Orbs \nD.O.T.S. Projector",
-    "raiTra": "The Raiju is really fast around electronic equipment that is turned on (6m on small, 8m on medium and 10m on large maps). \nWatch out for this, as the ghost room will usually be showered with electronic equipment (D.O.T.S. Projector, Video Camera, EMF Reader, etc) \nThe Raiju disturbs electronic equipment with a bigger range .\n\nCan Hunt at 65% Sanitywhen there is electrical equipment nearby.",
-    "raiAbi": "The Raiju has no hidden abilities. But watch out! It is super fast."
+    "name": "Raiju",
+    "evidence": "EMF Level 5 \nGhost Orbs \nD.O.T.S. Projector",
+    "trait": "The Raiju is really fast around electronic equipment that is turned on (6m on small, 8m on medium and 10m on large maps). \nWatch out for this, as the ghost room will usually be showered with electronic equipment (D.O.T.S. Projector, Video Camera, EMF Reader, etc) \nThe Raiju disturbs electronic equipment with a bigger range .\n\nCan Hunt at 65% Sanitywhen there is electrical equipment nearby.",
+    "ability": "The Raiju has no hidden abilities. But watch out! It is super fast."
 }

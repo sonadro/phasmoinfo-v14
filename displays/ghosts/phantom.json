@@ -1,5 +1,6 @@
 {
-    "phaEvi": "Spirit Box \nFingerprints \nD.O.T.S. Projector",
-    "phaTra": "**During hunts, the Phantom will flicker slower than other ghosts. (at least 1 second between blinks)** \n \nIf you get a ghost photo, but there is no sign of a ghost on the photo when you check it in the journal, you might deal with a Phantom.If a photo is taken during a ghostevent or from D.O.T.S the Ghost will become invisible after!\n\nCan Hunt at 50% Sanity.",
-    "phaAbi": "The Phantom can choose to roam to a random player on the map, and start activity there (hunts, events, interactions)"
+    "name": "Phantom",
+    "evidence": "Spirit Box \nFingerprints \nD.O.T.S. Projector",
+    "trait": "**During hunts, the Phantom will flicker slower than other ghosts. (at least 1 second between blinks)** \n \nIf you get a ghost photo, but there is no sign of a ghost on the photo when you check it in the journal, you might deal with a Phantom.If a photo is taken during a ghostevent or from D.O.T.S the Ghost will become invisible after!\n\nCan Hunt at 50% Sanity.",
+    "ability": "The Phantom can choose to roam to a random player on the map, and start activity there (hunts, events, interactions)"
 }

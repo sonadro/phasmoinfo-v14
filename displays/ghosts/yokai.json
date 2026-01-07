@@ -1,5 +1,6 @@
 {
-    "yokEvi": "Spirit Box \nGhost Orb \nD.O.T.S. Projector",
-    "yokTra": "**A Yokai will only hear players/equipment near it during hunts.** \nTo test this: break line of sight with the ghost, while your flashlight is on. \nA Yokai wouldn't detect your flashlight, while other ghosts would chase you down.\n\nCan Hunt at 80% Sanity if anyone is talking nearby.",
-    "yokAbi": "When a player is talking near it, the Yokai has a chance to trigger a hunt, **if you are below 80% sanity.** \n***Early hunting ghost.***"
+    "name": "Yokai",
+    "evidence": "Spirit Box \nGhost Orb \nD.O.T.S. Projector",
+    "trait": "**A Yokai will only hear players/equipment near it during hunts.** \nTo test this: break line of sight with the ghost, while your flashlight is on. \nA Yokai wouldn't detect your flashlight, while other ghosts would chase you down.\n\nCan Hunt at 80% Sanity if anyone is talking nearby.",
+    "ability": "When a player is talking near it, the Yokai has a chance to trigger a hunt, **if you are below 80% sanity.** \n***Early hunting ghost.***"
 }

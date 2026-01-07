@@ -1,5 +1,6 @@
 {
-    "polEvi": "Spirit Box \nGhost Writing \nFingerprints",
-    "polTra": "'A Poltergeist can throw objects faster and further than other ghosts. \nAlso it will throw an item every 0.5 seconds during a hunt (other ghosts do it with 50% chance).\n\nCan Hunt at 50% Sanity.",
-    "polAbi": "**A Poltergeist can throw multiple objects at once.** \nThis is called a multithrow, and it drains sanity. \nA multithrow will make some loud noise, and the activity chart in the van will show a short and tall spike. 2% sanity drain per object thrown of all players around the ghost"
+    "name": "Poltergeist",
+    "Evidence": "Spirit Box \nGhost Writing \nFingerprints",
+    "trait": "'A Poltergeist can throw objects faster and further than other ghosts. \nAlso it will throw an item every 0.5 seconds during a hunt (other ghosts do it with 50% chance).\n\nCan Hunt at 50% Sanity.",
+    "ability": "**A Poltergeist can throw multiple objects at once.** \nThis is called a multithrow, and it drains sanity. \nA multithrow will make some loud noise, and the activity chart in the van will show a short and tall spike. 2% sanity drain per object thrown of all players around the ghost"
 }

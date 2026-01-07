@@ -1,5 +1,6 @@
 {
-    "marEvi": "Spirit Box \nGhost Orbs \nGhost Writing",
-    "marTra": "The Mare will never turn on any lights. It has a chance to immediately flicker lights off and giving you EMF Level 2. \n \nThe Mare prefers to do the ghost event that breaks the lights. \n \nIf the lights around the Mare are on, the Mare will roam further.\n\nCan Hunt at 60% Sanity when no lights are on, 40% whith lights are on.",
-    "marAbi": "The Mare has no hidden abilities."
+    "name": "Mare",
+    "evidence": "Spirit Box \nGhost Orbs \nGhost Writing",
+    "trait": "The Mare will never turn on any lights. It has a chance to immediately flicker lights off and giving you EMF Level 2. \n \nThe Mare prefers to do the ghost event that breaks the lights. \n \nIf the lights around the Mare are on, the Mare will roam further.\n\nCan Hunt at 60% Sanity when no lights are on, 40% whith lights are on.",
+    "ability": "The Mare has no hidden abilities."
 }

@@ -1,5 +1,6 @@
 {
-    "onrEvi": "Spirit Box \nGhost Orbs \nFreezing Temperatures",
-    "onrTra": "The Onryo will blow out firelights more frequently than other ghosts \n \nIf there are multiple lit firelights in a room, the Onryo will not be able to hunt. \n \nIf you place a firelight on top of a crucifix, with other firelights nearby, the Onryo will prioritize blowing out the firelight instead of using the crucifix.\n\nCan Hunt at 50%.",
-    "onrAbi": "Firelights prevents a hunt in a range of 4m when lit! The Onryo can hunt at any sanity if it blows out the only lit firelight in a room. This will first happen after it blew out 3 firelights! \n \nAfter 2 people have died, the Onryo has a 100% chance to hunt after blowing out the only lit firelight nearby."
+    "name": "Onryo",
+    "evidence": "Spirit Box \nGhost Orbs \nFreezing Temperatures",
+    "trait": "The Onryo will blow out firelights more frequently than other ghosts \n \nIf there are multiple lit firelights in a room, the Onryo will not be able to hunt. \n \nIf you place a firelight on top of a crucifix, with other firelights nearby, the Onryo will prioritize blowing out the firelight instead of using the crucifix.\n\nCan Hunt at 50%.",
+    "ability": "Firelights prevents a hunt in a range of 4m when lit! The Onryo can hunt at any sanity if it blows out the only lit firelight in a room. This will first happen after it blew out 3 firelights! \n \nAfter 2 people have died, the Onryo has a 100% chance to hunt after blowing out the only lit firelight nearby."
 }

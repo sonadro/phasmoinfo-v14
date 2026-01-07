@@ -1,5 +1,6 @@
 {
-    "obamEvi": "Ghost writing\nUltraviolet\nD.O.T.S projector",
-    "obamTra": "The Obambo has a calm and an aggresive state. It switches between this states every two minutes.\n \nWhen calm the Obambo has a speed of 1,36m/s, when agressive 2,04m/s.",
-    "obamAbi": "The Obambo will switch between the states not only during a hunt but during the whole investigation.\n \nWhen calm the Obambo will hunt at 15% average sanity, when aggresive at 65% average sanity."
+    "name": "Obambo",
+    "evidence": "Ghost writing\nUltraviolet\nD.O.T.S projector",
+    "trait": "The Obambo has a calm and an aggresive state. It switches between this states every two minutes.\n \nWhen calm the Obambo has a speed of 1,36m/s, when agressive 2,04m/s.",
+    "ability": "The Obambo will switch between the states not only during a hunt but during the whole investigation.\n \nWhen calm the Obambo will hunt at 15% average sanity, when aggresive at 65% average sanity."
   }

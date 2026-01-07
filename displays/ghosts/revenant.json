@@ -1,5 +1,6 @@
 {
-    "revEvi": "Ghost Orbs \nGhost Writing \nFreezing Temperatures",
-    "revTra": "When hunting, the Revenant is the fastest ghost in the game, provided you are within its line of sight. \nIf you break line of sight, the Revenant will run to your last known position and then slow down over 2.7 seconds. \n \nBe careful when triggering cursed hunts, because the 1s grace period combined with the sheer speed of the Revenant, it can instantly kill you.\n\nCan Hunt at 50% Sanity.",
-    "revAbi": "No hidden abilities, but you can test for the Revenant. \nListen during hunts, and see if you can hear if the ghost is fast or not. If it is really fast, and gets slower when you break line of sight, you might be dealing with a Revenant. \n**Bring incence!** (p.smudging)"
+    "name": "Revenant",
+    "evidence": "Ghost Orbs \nGhost Writing \nFreezing Temperatures",
+    "trait": "When hunting, the Revenant is the fastest ghost in the game, provided you are within its line of sight. \nIf you break line of sight, the Revenant will run to your last known position and then slow down over 2.7 seconds. \n \nBe careful when triggering cursed hunts, because the 1s grace period combined with the sheer speed of the Revenant, it can instantly kill you.\n\nCan Hunt at 50% Sanity.",
+    "ability": "No hidden abilities, but you can test for the Revenant. \nListen during hunts, and see if you can hear if the ghost is fast or not. If it is really fast, and gets slower when you break line of sight, you might be dealing with a Revenant. \n**Bring incence!** (p.smudging)"
 }

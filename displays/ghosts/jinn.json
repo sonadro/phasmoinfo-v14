@@ -1,5 +1,6 @@
 {
-    "jinEvi": "EMF Level 5 \nFingerprints \nFreezing Temperatures",
-    "jinTra": "Jinns don't turn off the breaker. \n \nThe Jinn gets faster the further away it is from a player when in line of sight. \nOn small maps this will be hard to notice because you are always close to it.",
-    "jinAbi": "When you are in the same room or a range of 3m to the Jinn, it can drain your sanity by 20% **only if the breaker is on.** If this happens there will be EMF on the fuse box.\n\nCan Hunt at 50% Sanity."
+    "name": "Jinn",
+    "evidence": "EMF Level 5 \nFingerprints \nFreezing Temperatures",
+    "trait": "Jinns don't turn off the breaker. \n \nThe Jinn gets faster the further away it is from a player when in line of sight. \nOn small maps this will be hard to notice because you are always close to it.",
+    "ability": "When you are in the same room or a range of 3m to the Jinn, it can drain your sanity by 20% **only if the breaker is on.** If this happens there will be EMF on the fuse box.\n\nCan Hunt at 50% Sanity."
 }

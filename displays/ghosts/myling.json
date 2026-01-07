@@ -1,5 +1,6 @@
 {
-    "mylEvi": "EMF Level 5 \nFingerprints \nGhost Writing",
-    "mylTra": "**When hunting, the footsteps and sound of a Myling are quieter than those of other ghosts** \nTest it: Throw your flashlight on the floor during a hunt. If the ghost is near you and you see the flashlight is blinking before you can hear the ghost, you might be dealing with a Myling.\n\nCan Hunt at 50% Sanity.",
-    "mylAbi": "The Myling has no hidden abilities."
+    "name": "Myling",
+    "evidence": "EMF Level 5 \nFingerprints \nGhost Writing",
+    "trait": "**When hunting, the footsteps and sound of a Myling are quieter than those of other ghosts** \nTest it: Throw your flashlight on the floor during a hunt. If the ghost is near you and you see the flashlight is blinking before you can hear the ghost, you might be dealing with a Myling.\n\nCan Hunt at 50% Sanity.",
+    "ability": "The Myling has no hidden abilities."
 }

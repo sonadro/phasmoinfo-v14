@@ -1,5 +1,6 @@
 {
-    "obaEvi": "EMF Level 5 \nFingerprints \nGhost Orbs",
-    "obaTra": "The Obake only has a 75% chance of leaving fingerprints! **(other ghosts have a 100% chance)** \nIf you have fingerprints as an evidence, and only sometimes get fingerprints on door touches, you are dealing with an Obakep. \n \nAn Obake's fingerprints have a chance to disappear after only 1 minute instead of the normal 2 minutes.\n\nCan Hunt at 50% Sanity.",
-    "obaAbi": "'An Obake have a chance to leave a fingerprint with 6 fingers on doors, a double fingerprint on lightswitch and a five fingerprint on Prison doors! \n \nDuring a hunt there is a 6.66% hance the Obake shift into a different ghost’s form for one blink. They will then return back to their original form. This is guaranteed to happen at leat once per Hunt!"
+    "name": "Obake",
+    "evidence": "EMF Level 5 \nFingerprints \nGhost Orbs",
+    "trait": "The Obake only has a 75% chance of leaving fingerprints! **(other ghosts have a 100% chance)** \nIf you have fingerprints as an evidence, and only sometimes get fingerprints on door touches, you are dealing with an Obakep. \n \nAn Obake's fingerprints have a chance to disappear after only 1 minute instead of the normal 2 minutes.\n\nCan Hunt at 50% Sanity.",
+    "ability": "'An Obake have a chance to leave a fingerprint with 6 fingers on doors, a double fingerprint on lightswitch and a five fingerprint on Prison doors! \n \nDuring a hunt there is a 6.66% hance the Obake shift into a different ghost’s form for one blink. They will then return back to their original form. This is guaranteed to happen at leat once per Hunt!"
 }

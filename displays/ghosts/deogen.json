@@ -1,5 +1,6 @@
 {
-    "deoEvi": "Spirit Box \nGhost Writing \nD.O.T.S. Projector",
-    "deoTra": "**You can __NOT HIDE__ from this ghost** \n \nThe deogen is extremely fast if it can not see you, but if it has line of sight of you, it will move very slowly. \n \nThis means **you have to loop the ghost** during a hunt. \n \nYou can't get the Deogen till you're Prestige0-Level30 \n\nCan Hunt at 40% Sanity. Does not speed up over time in LoS.",
-    "deoAbi": "Unique Spirit Box response for the Deogen only. Ask the Spirit Box any question when standing within 1m of the Deogen, to have a 33% chance of getting it."
+    "name": "Deogen",
+    "evidence": "Spirit Box \nGhost Writing \nD.O.T.S. Projector",
+    "trait": "**You can __NOT HIDE__ from this ghost** \n \nThe deogen is extremely fast if it can not see you, but if it has line of sight of you, it will move very slowly. \n \nThis means **you have to loop the ghost** during a hunt. \n \nYou can't get the Deogen till you're Prestige0-Level30 \n\nCan Hunt at 40% Sanity. Does not speed up over time in LoS.",
+    "ability": "Unique Spirit Box response for the Deogen only. Ask the Spirit Box any question when standing within 1m of the Deogen, to have a 33% chance of getting it."
 }

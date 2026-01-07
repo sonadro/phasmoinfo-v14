@@ -1,5 +1,6 @@
 {
-    "galEvi": "EMF 5\nUltraviolet\nSpirit Box",
-    "galTra": "The Gallu has three tiers it can be in: normal, enraged and weakened. It becomes more enraged, the more protective equipment (incence, salt and crucifix) you use. After being enraged it will become weakened in the next hunt, when using protective equipment it will go up by one tier.\n \nWhen enraged the gallu has a speed of 2,04m/s, when weakened 1,36m/s",
-    "galAbi": "The Gallu can hunt at 50% average sanity.\nA smudge will last 7s when the gallu is weakened. When it is enraged, the Gallu is generally more active and will also not step in salt."
+    "name": "Gallu",
+    "evidence": "EMF 5\nUltraviolet\nSpirit Box",
+    "trait": "The Gallu has three tiers it can be in: normal, enraged and weakened. It becomes more enraged, the more protective equipment (incence, salt and crucifix) you use. After being enraged it will become weakened in the next hunt, when using protective equipment it will go up by one tier.\n \nWhen enraged the gallu has a speed of 2,04m/s, when weakened 1,36m/s",
+    "ability": "The Gallu can hunt at 50% average sanity.\nA smudge will last 7s when the gallu is weakened. When it is enraged, the Gallu is generally more active and will also not step in salt."
   }

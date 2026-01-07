@@ -1,5 +1,6 @@
 {
-    "shaEvi": "EMF Level 5 \nGhost Writing \nFreezing Temperatures",
-    "shaTra": "Schades have a lower activity over all, they won't interact with objects if a player is in the same room (even candles and the writing book!). They have a much lower chance to perform ghost events, For every 1% of average sanity lost, ghost event chance is increased by 2% (starting with 0% change at 100% sanity). A Shade can't start a hunt if a player is nearby. \n\nThe Shade prefers to do the airball event. **(p.airball)**, also it prefers to be in the shadow form during ghost events. \n\nCan Hunt at 35% Sanity.",
-    "shaAbi": "The Shade has no hidden abilities."
+    "name": "Shade",
+    "evidence": "EMF Level 5 \nGhost Writing \nFreezing Temperatures",
+    "trait": "Schades have a lower activity over all, they won't interact with objects if a player is in the same room (even candles and the writing book!). They have a much lower chance to perform ghost events, For every 1% of average sanity lost, ghost event chance is increased by 2% (starting with 0% change at 100% sanity). A Shade can't start a hunt if a player is nearby. \n\nThe Shade prefers to do the airball event. **(p.airball)**, also it prefers to be in the shadow form during ghost events. \n\nCan Hunt at 35% Sanity.",
+    "ability": "The Shade has no hidden abilities."
 }

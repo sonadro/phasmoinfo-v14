@@ -1,5 +1,6 @@
 {
-    "mimEvi": "Spirit Box \nFingerprints \nFreezing Temperatures \n(Ghost Orbs)",
-    "mimTra": "The Mimic will **always** have Ghost Orbs as a fake evidence. \nIf you ever get 4 pieces of evidence (or 3 on nightmare), you are dealing with a Mimic \n \nNote: This only goes for Spirit Box, Fingerprints, Freezing Temperatures, and Ghost Orbs. If you have 4 evidence, but not these, then we suggest double checking the evidence you had, just to be sure you saw them.\n\n**Can Hunt at any Sanity, depends on what Ghost it mimics!**",
-    "mimAbi": "The Mimic can do **any ability** or **trait** of **any ghost** \nWatch out!"
+    "name": "Mimic",
+    "evidence": "Spirit Box \nFingerprints \nFreezing Temperatures \n(Ghost Orbs)",
+    "trait": "The Mimic will **always** have Ghost Orbs as a fake evidence. \nIf you ever get 4 pieces of evidence (or 3 on nightmare), you are dealing with a Mimic \n \nNote: This only goes for Spirit Box, Fingerprints, Freezing Temperatures, and Ghost Orbs. If you have 4 evidence, but not these, then we suggest double checking the evidence you had, just to be sure you saw them.\n\n**Can Hunt at any Sanity, depends on what Ghost it mimics!**",
+    "ability": "The Mimic can do **any ability** or **trait** of **any ghost** \nWatch out!"
 }
