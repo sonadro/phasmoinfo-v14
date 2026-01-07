@@ -124,33 +124,65 @@ module.exports = {
                 ];
 
                 // Discord limits embeds to 25 fields max, so we chunk the ghosts
-                const chunkSize = 25;
-                const embeds = [];
+                const pageSize = 14; // 14 ghosts per page to fit nicely
+            let page = 0;
 
-                for (let i = 0; i < ghosts.length; i += chunkSize) {
-                    const chunk = ghosts.slice(i, i + chunkSize);
+            const generateEmbed = (page) => {
+                const start = page * pageSize;
+                const end = start + pageSize;
+                const pageGhosts = ghosts.slice(start, end);
+                return new EmbedBuilder()
+                    .setTitle('Ghosts')
+                    .setDescription('Overview of all Ghosts')
+                    .addFields(pageGhosts.map(g => ({ name: g, value: `Command: /ghost ${g.toLowerCase()}`, inline: true })))
+                    .setFooter({ text: `Page ${page + 1} of ${Math.ceil(ghosts.length / pageSize)}` })
+                    .setColor('#FF5A5A');
+            };
 
-                    const embed = new EmbedBuilder()
-                        .setTitle('Ghosts')
-                        .setDescription('Overview of all Ghosts')
-                        .setColor('#FF5A5A')
-                        .setFooter({ text: `Page ${Math.floor(i / chunkSize) + 1} of ${Math.ceil(ghosts.length / chunkSize)}` })
-                        .addFields(chunk.map(g => ({
-                            name: g,
-                            value: `Command: /ghost ${g.toLowerCase().replace(/ /g, '-')}`,
-                            inline: true
-                        })));
+            const row = new ActionRowBuilder()
+                .addComponents(
+                    new ButtonBuilder()
+                        .setCustomId('previous')
+                        .setLabel('Previous')
+                        .setStyle(ButtonStyle.Primary)
+                        .setDisabled(true),
+                    new ButtonBuilder()
+                        .setCustomId('next')
+                        .setLabel('Next')
+                        .setStyle(ButtonStyle.Primary)
+                        .setDisabled(ghosts.length <= pageSize)
+                );
 
-                    embeds.push(embed);
-                }
+            const message = await interaction.editReply({ embeds: [generateEmbed(page)], components: [row] });
 
-                // Send first embed
-                await interaction.editReply({ embeds: [embeds[0]] });
+            const collector = message.createMessageComponentCollector({ time: 60000 });
 
-                // If more than one page, let the user know
-                if (embeds.length > 1) {
-                    await interaction.followUp({ content: `More ghosts are available. (Page 2 of ${embeds.length})`, ephemeral: true });
-                }
+            collector.on('collect', async i => {
+                if (!i.isButton()) return;
+
+                if (i.customId === 'next') page++;
+                if (i.customId === 'previous') page--;
+
+                await i.update({
+                    embeds: [generateEmbed(page)],
+                    components: [
+                        new ActionRowBuilder().addComponents(
+                            new ButtonBuilder()
+                                .setCustomId('previous')
+                                .setLabel('Previous')
+                                .setStyle(ButtonStyle.Primary)
+                                .setDisabled(page === 0),
+                            new ButtonBuilder()
+                                .setCustomId('next')
+                                .setLabel('Next')
+                                .setStyle(ButtonStyle.Primary)
+                                .setDisabled(page >= Math.ceil(ghosts.length / pageSize) - 1)
+                        )
+                    ]
+                });
+            });
+
+            return;
 
             // === MAPS SUBCOMMAND ===
             } else if (subcommand === 'maps') {
